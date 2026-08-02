@@ -166,13 +166,19 @@ h1{
 
 font-family:'Cormorant Garamond',serif;
 
-font-size:96px;
+font-size:78px;
 
-font-weight:600;
+font-weight:700;
 
-line-height:0.95;
+line-height:1.1;
 
-margin-bottom:35px;
+letter-spacing:-2px;
+
+white-space:nowrap;
+
+margin:0 auto 40px;
+
+color:#161616;
 
 }
 h1 span{
