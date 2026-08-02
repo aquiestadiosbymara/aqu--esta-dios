@@ -138,11 +138,15 @@ overflow:hidden;
 
 .hero-content{
 
-max-width:850px;
+max-width:1250px;
 
 text-align:center;
 
+position:relative;
+
 z-index:2;
+
+padding:0 40px;
 
 }
 
@@ -171,7 +175,25 @@ line-height:0.95;
 margin-bottom:35px;
 
 }
+h1 span{
 
+background:linear-gradient(
+180deg,
+#F8E6A4 0%,
+#D4AF37 45%,
+#B8860B 100%
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+font-weight:700;
+
+text-shadow:
+
+0 0 18px rgba(212,175,55,.18);
+
+}
 .subtitle{
 
 font-size:21px;
