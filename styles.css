@@ -32,7 +32,11 @@ left:0;
 
 z-index:100;
 
-backdrop-filter:blur(20px);
+background:rgba(248,247,244,.75);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(214,175,85,.15);
 
 }
 
