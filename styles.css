@@ -185,11 +185,17 @@ h1 span{
 
 background:linear-gradient(
 180deg,
-#F8E6A4 0%,
+#F8E7A1 0%,
 #D4AF37 45%,
-#B8860B 100%
+#A67C00 100%
 );
 
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+font-weight:700;
+
+}
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 
