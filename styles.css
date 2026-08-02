@@ -155,21 +155,21 @@ padding:0 40px;
 
 h1{
 
-font-family:'Cormorant Garamond',serif;
+font-family:'DM Serif Display',serif;
 
-font-size:78px;
+font-size:88px;
 
-font-weight:700;
+font-weight:400;
 
-line-height:1.1;
+line-height:1.08;
 
 letter-spacing:-2px;
 
-white-space:nowrap;
+max-width:1450px;
 
-margin:0 auto 40px;
+margin:auto;
 
-color:#161616;
+margin-bottom:45px;
 
 }
 h1 span{
