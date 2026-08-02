@@ -81,7 +81,7 @@ nav{
 
 display:flex;
 align-items:center;
-gap:45px;
+justify-content:flex-end;
 
 }
 
@@ -97,16 +97,21 @@ font-size:15px;
 
 .btn-nav{
 
-padding:13px 24px;
+padding:15px 34px;
 
-border:1px solid #161616;
+border:1.5px solid #161616;
 
-border-radius:50px;
+border-radius:999px;
+
+text-decoration:none;
+
+font-size:15px;
+
+font-weight:500;
 
 transition:.35s;
 
 }
-
 .btn-nav:hover{
 
 background:#161616;
