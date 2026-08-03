@@ -188,7 +188,9 @@ background:linear-gradient(180deg,#F8E6A4,#D4AF37,#B8860B);
 opacity:.95;
 
 z-index:1;
+filter: drop-shadow(0 0 12px rgba(255,215,100,.9));
 
+animation: glow 4s ease-in-out infinite;
 }
 
 .title-3{
@@ -313,5 +315,32 @@ background:linear-gradient(90deg,#F8E08A,#D4AF37,#F7E8B4);
 -webkit-background-clip:text;
 
 -webkit-text-fill-color:transparent;
+
+}
+@keyframes glow{
+
+0%{
+
+filter:
+drop-shadow(0 0 15px rgba(255,220,120,.5))
+drop-shadow(0 0 40px rgba(255,220,120,.35));
+
+}
+
+50%{
+
+filter:
+drop-shadow(0 0 35px rgba(255,220,120,.9))
+drop-shadow(0 0 90px rgba(255,220,120,.6));
+
+}
+
+100%{
+
+filter:
+drop-shadow(0 0 15px rgba(255,220,120,.5))
+drop-shadow(0 0 40px rgba(255,220,120,.35));
+
+}
 
 }
