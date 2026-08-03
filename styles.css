@@ -108,13 +108,13 @@ overflow:hidden;
 .hero-content{
 
 width:100%;
-
 max-width:1400px;
 
 position:relative;
 
-}
+padding-left:120px;
 
+}
 .hero-text{
 
 position:relative;
@@ -188,7 +188,10 @@ background:linear-gradient(180deg,#F8E6A4,#D4AF37,#B8860B);
 opacity:.95;
 
 z-index:1;
-filter: drop-shadow(0 0 12px rgba(255,215,100,.9));
+filter:
+drop-shadow(0 0 18px rgba(255,255,255,.95))
+drop-shadow(0 0 45px rgba(255,255,255,.75))
+drop-shadow(0 0 90px rgba(255,255,255,.45));
 
 animation: glow 4s ease-in-out infinite;
 }
@@ -316,7 +319,13 @@ font-weight:800;
 
 letter-spacing:3px;
 
-background:linear-gradient(90deg,#F8E08A,#D4AF37,#F7E8B4);
+background:linear-gradient(
+90deg,
+#FFF7D6 0%,
+#F6D66A 30%,
+#D4AF37 65%,
+#A87400 100%
+);
 
 -webkit-background-clip:text;
 
