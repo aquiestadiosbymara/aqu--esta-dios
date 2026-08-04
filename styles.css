@@ -266,21 +266,26 @@ transform:translateY(-4px);
 
 position:absolute;
 
-width:900px;
-
-height:900px;
-
-background:radial-gradient(circle,rgba(255,255,255,1) 0%,rgba(255,245,220,.8) 30%,rgba(214,175,85,.2) 60%,transparent 100%);
+width:1200px;
+height:1200px;
 
 top:50%;
-
 left:50%;
 
 transform:translate(-50%,-50%);
 
-filter:blur(45px);
+background:
+radial-gradient(circle,
+rgba(255,255,255,0.95) 0%,
+rgba(255,255,255,0.75) 18%,
+rgba(248,247,243,0.35) 40%,
+transparent 72%);
+
+filter:blur(70px);
 
 z-index:0;
+
+pointer-events:none;
 
 }
 .subtitle{
