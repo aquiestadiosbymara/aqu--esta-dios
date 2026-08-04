@@ -345,3 +345,55 @@ drop-shadow(0 0 40px rgba(255,220,120,.35));
 }
 
 }
+/* DESTELLOS */
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+pointer-events:none;
+
+background-image:
+
+radial-gradient(circle at 18% 28%, rgba(212,175,55,.55) 0px, rgba(212,175,55,0) 3px),
+
+radial-gradient(circle at 76% 18%, rgba(212,175,55,.45) 0px, rgba(212,175,55,0) 2px),
+
+radial-gradient(circle at 82% 62%, rgba(212,175,55,.5) 0px, rgba(212,175,55,0) 3px),
+
+radial-gradient(circle at 35% 74%, rgba(212,175,55,.4) 0px, rgba(212,175,55,0) 2px),
+
+radial-gradient(circle at 60% 42%, rgba(212,175,55,.35) 0px, rgba(212,175,55,0) 2px),
+
+radial-gradient(circle at 12% 85%, rgba(212,175,55,.45) 0px, rgba(212,175,55,0) 3px);
+
+opacity:.65;
+
+animation:twinkle 8s ease-in-out infinite;
+
+}
+@keyframes twinkle{
+
+0%{
+
+opacity:.35;
+
+}
+
+50%{
+
+opacity:.8;
+
+}
+
+100%{
+
+opacity:.35;
+
+}
+
+}
