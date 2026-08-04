@@ -216,20 +216,24 @@ position:relative;
 
 .subtitle{
 
-margin-top:55px;
-max-width:720px;
+margin-top:70px;
+max-width:760px;
 
 font-family:'Outfit',sans-serif;
 
 font-size:22px;
 font-weight:400;
 
-line-height:1.55;
+line-height:1.7;
 
 letter-spacing:-0.2px;
 
-color:#666;
+color:#575757;
+font-weight:400;
 
+letter-spacing:-0.2px;
+
+text-wrap:balance;
 text-align:left;
 
 }
