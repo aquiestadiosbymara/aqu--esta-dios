@@ -401,3 +401,23 @@ opacity:.35;
 }
 
 }
+
+.signature{
+
+margin-top:22px;
+
+font-family:'Caveat',cursive;
+
+font-size:34px;
+
+font-weight:600;
+
+color:#C79A21;
+
+letter-spacing:.3px;
+
+opacity:.95;
+
+transform:rotate(-2deg);
+
+}
