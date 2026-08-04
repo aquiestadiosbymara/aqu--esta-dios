@@ -285,11 +285,11 @@ z-index:0;
 }
 .subtitle{
 
-max-width:720px;
+max-width:840px;
 
-font-size:22px;
+font-size:21px;
 
-line-height:1.9;
+line-height:1.55;
 
 font-weight:400;
 
@@ -308,17 +308,11 @@ font-weight:700;
 }
 .diosidad{
 
-display:inline;
+font-weight:800;
 
-font-weight:700;
+color:#B8860B;
 
-background:linear-gradient(90deg,#F7E8B4,#D4AF37,#B8860B);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-background-clip:text;
-
-}
+} 
 @keyframes glow{
 
 0%{
