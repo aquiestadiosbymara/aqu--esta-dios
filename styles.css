@@ -259,6 +259,8 @@ font-weight:500;
 transition:.35s;
     
 position:relative;
+    
+overflow:hidden;
 }
 
 .btn-hero:hover{
