@@ -403,19 +403,20 @@ opacity:.35;
 }
 
 .signature{
-    margin-top:22px;
-    margin-left:8px;
+    margin-top:30px;
+    margin-left:38px;
 
     font-family:"Cormorant Garamond", serif;
-    font-size:30px;
+    font-size:34px;
     font-style:italic;
     font-weight:500;
 
-    color:#2d2d2d;
+    color:#7a6a3a;
 
-    opacity:.78;
+    opacity:.82;
 
-    letter-spacing:.3px;
+    letter-spacing:.4px;
+    line-height:1;
 
-    transform:rotate(-1.2deg);
+    transform:rotate(-2deg);
 }
