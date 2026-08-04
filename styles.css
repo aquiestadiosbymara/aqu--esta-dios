@@ -169,7 +169,7 @@ position:relative;
 
 position:absolute;
 
-right:260px;
+right:180px;
 
 top:95px;
 
@@ -306,30 +306,17 @@ color:#181818;
 font-weight:700;
 
 }
-
 .diosidad{
 
-display:inline-block;
+display:inline;
 
-margin-top:8px;
+font-weight:700;
 
-font-size:28px;
-
-font-weight:800;
-
-letter-spacing:3px;
-
-background:linear-gradient(
-90deg,
-#FFF7D6 0%,
-#F6D66A 30%,
-#D4AF37 65%,
-#A87400 100%
-);
+background:linear-gradient(90deg,#F7E8B4,#D4AF37,#B8860B);
 
 -webkit-background-clip:text;
-
 -webkit-text-fill-color:transparent;
+background-clip:text;
 
 }
 @keyframes glow{
