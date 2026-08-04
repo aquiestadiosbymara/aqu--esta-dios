@@ -257,7 +257,8 @@ border-radius:999px;
 font-weight:500;
 
 transition:.35s;
-
+    
+position:relative;
 }
 
 .btn-hero:hover{
@@ -403,20 +404,28 @@ opacity:.35;
 }
 
 .signature{
+    display:inline-block;
+
     margin-top:18px;
+    margin-left:0;
 
     font-family:"Cormorant Garamond", serif;
-    font-size:18px;
+    font-size:22px;
     font-style:italic;
     font-weight:500;
 
-    color:#8f7440;
+    color:#5b5b5b;
+    opacity:.75;
 
-    opacity:.78;
+    letter-spacing:.2px;
+    line-height:1;
 
-    letter-spacing:.4px;
+    transform:rotate(-1deg);
 
-    text-align:center;
-
-    width:275px;
+    width:auto;
+}
+.signature::before{
+    content:"— ";
+    color:#d4af37;
+    margin-right:4px;
 }
