@@ -437,3 +437,38 @@ transform:skewX(-25deg);
 transition:.8s;
 
 }
+.cursor-light{
+
+position:fixed;
+
+width:380px;
+
+height:380px;
+
+border-radius:50%;
+
+pointer-events:none;
+
+left:0;
+
+top:0;
+
+transform:translate(-50%,-50%);
+
+background:radial-gradient(
+circle,
+rgba(255,255,255,.30) 0%,
+rgba(255,255,255,.12) 35%,
+rgba(255,255,255,.04) 60%,
+transparent 80%
+);
+
+filter:blur(18px);
+
+z-index:0;
+
+opacity:.95;
+
+transition:opacity .3s;
+
+}
