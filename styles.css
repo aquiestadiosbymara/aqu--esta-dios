@@ -267,8 +267,14 @@ overflow:hidden;
 
 transform:translateY(-4px);
 
-}
+box-shadow:0 18px 45px rgba(0,0,0,.18);
 
+}
+.btn-hero:hover::before{
+
+left:150%;
+
+}
 .glow{
 
 position:absolute;
@@ -430,4 +436,30 @@ opacity:.35;
     content:"— ";
     color:#d4af37;
     margin-right:4px;
+}
+.btn-hero::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:70%;
+
+height:100%;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.35),
+transparent
+);
+
+transform:skewX(-25deg);
+
+transition:.8s;
+
 }
