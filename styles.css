@@ -411,32 +411,6 @@ opacity:.35;
 
 }
 
-.signature{
-    display:inline-block;
-
-    margin-top:18px;
-    margin-left:0;
-
-    font-family:"Cormorant Garamond", serif;
-    font-size:22px;
-    font-style:italic;
-    font-weight:500;
-
-    color:#5b5b5b;
-    opacity:.75;
-
-    letter-spacing:.2px;
-    line-height:1;
-
-    transform:rotate(-1deg);
-
-    width:auto;
-}
-.signature::before{
-    content:"— ";
-    color:#d4af37;
-    margin-right:4px;
-}
 .btn-hero::before{
 
 content:"";
