@@ -534,75 +534,276 @@ display:block;
 opacity:.96;
 
 }
+/*======================================
+            SALA ARCOÍRIS
+======================================*/
+
 .offer-section{
 
-padding:120px 8% 180px;
-
-display:flex;
-
-justify-content:center;
-
-background:#ffffff;
+    padding:120px 8% 150px;
+    display:flex;
+    justify-content:center;
+    background:#fff;
 
 }
 
 .offer-card{
 
-width:100%;
+    width:100%;
+    max-width:850px;
 
-max-width:900px;
+    background:#fff;
 
-background:rgba(255,255,255,.82);
+    border-radius:38px;
 
-border:1px solid rgba(212,175,55,.18);
+    padding:55px;
 
-border-radius:42px;
+    border:1px solid rgba(212,175,55,.15);
 
-padding:70px;
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.05);
 
-backdrop-filter:blur(18px);
+    position:relative;
 
-box-shadow:
-0 25px 70px rgba(0,0,0,.05),
-0 8px 25px rgba(212,175,55,.05);
+    overflow:hidden;
 
-position:relative;
-
-overflow:hidden;
-
-transition:.45s;
-
-cursor:pointer;
+    transition:.35s ease;
 
 }
-.offer-card::before{
 
-content:"";
-
-position:absolute;
-
-top:-180px;
-left:-180px;
-
-width:420px;
-height:420px;
-
-background:radial-gradient(circle,
-rgba(255,255,255,.95) 0%,
-rgba(255,255,255,.45) 40%,
-transparent 75%);
-
-filter:blur(35px);
-
-pointer-events:none;
-
-}
 .offer-card:hover{
 
-transform:translateY(-8px);
+    transform:translateY(-5px);
 
-box-shadow:
-0 35px 90px rgba(0,0,0,.08),
-0 15px 40px rgba(212,175,55,.08);
+    box-shadow:
+    0 35px 90px rgba(0,0,0,.08);
+
+}
+
+.offer-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+    right:-180px;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+    rgba(255,255,255,.95),
+    rgba(255,248,225,.55),
+    transparent 72%);
+
+    filter:blur(18px);
+
+    pointer-events:none;
+
+}
+
+/*----------*/
+
+.offer-tag{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#b89126;
+
+    font-weight:600;
+
+}
+
+.offer-card h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:58px;
+
+    font-weight:600;
+
+    color:#171717;
+
+    margin-bottom:22px;
+
+}
+
+.offer-description{
+
+    font-size:21px;
+
+    line-height:1.8;
+
+    color:#5d5d5d;
+
+    margin-bottom:40px;
+
+}
+
+/*----------*/
+
+.offer-divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:linear-gradient(90deg,
+    transparent,
+    rgba(212,175,55,.45),
+    transparent);
+
+    margin:40px 0;
+
+}
+
+.offer-card h3{
+
+    font-size:27px;
+
+    margin-bottom:25px;
+
+    color:#1b1b1b;
+
+}
+
+.offer-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px 35px;
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+/*----------*/
+
+.offer-includes{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:14px;
+
+    margin-top:10px;
+
+}
+
+.offer-includes span{
+
+    padding:11px 20px;
+
+    border-radius:999px;
+
+    background:#faf8f3;
+
+    border:1px solid rgba(212,175,55,.15);
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+/*----------*/
+
+.offer-price{
+
+    text-align:center;
+
+    margin:45px 0 30px;
+
+}
+
+.offer-price small{
+
+    display:block;
+
+    color:#b89126;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:12px;
+
+    margin-bottom:8px;
+
+}
+
+.offer-price h1{
+
+    font-size:34px;
+
+    font-weight:600;
+
+    color:#181818;
+
+    margin-bottom:10px;
+
+}
+
+.offer-price p{
+
+    color:#666;
+
+    font-size:17px;
+
+}
+
+/*----------*/
+
+.offer-button{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    padding:20px;
+
+    border-radius:999px;
+
+    background:#181818;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+.offer-button:hover{
+
+    transform:translateY(-3px);
 
 }
