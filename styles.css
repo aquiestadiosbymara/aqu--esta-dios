@@ -130,7 +130,9 @@ flex-direction:column;
 position:relative;
 
 line-height:.95;
-
+max-width:980px;
+margin:0 auto;
+align-items:center;
 }
 
 .title-1{
