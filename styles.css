@@ -597,3 +597,12 @@ filter:blur(35px);
 pointer-events:none;
 
 }
+.offer-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 35px 90px rgba(0,0,0,.08),
+0 15px 40px rgba(212,175,55,.08);
+
+}
