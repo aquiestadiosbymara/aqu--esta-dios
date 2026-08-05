@@ -698,15 +698,15 @@ opacity:.96;
 
 .offer-includes{
 
-    display:flex;
+margin-top:35px;
 
-    flex-wrap:wrap;
+display:flex;
 
-    justify-content:center;
+flex-wrap:wrap;
 
-    gap:14px;
+justify-content:center;
 
-    margin-top:10px;
+gap:16px;
 
 }
 .offer-includes h4{
@@ -726,20 +726,41 @@ opacity:.96;
 }
 .offer-includes span{
 
-    padding:11px 20px;
+display:flex;
+align-items:center;
+justify-content:center;
 
-    border-radius:999px;
+padding:14px 22px;
 
-    background:#faf8f3;
+background:#fffdf8;
 
-    border:1px solid rgba(212,175,55,.15);
+border:1px solid rgba(201,165,92,.20);
 
-    color:#555;
+border-radius:999px;
 
-    font-size:15px;
+font-size:17px;
+
+font-weight:500;
+
+color:#3d3d3d;
+
+box-shadow:
+0 8px 22px rgba(0,0,0,.04);
+
+transition:.35s;
 
 }
+.offer-includes span:hover{
 
+transform:translateY(-3px);
+
+border-color:#d4b36a;
+
+box-shadow:
+
+0 12px 28px rgba(212,179,106,.18);
+
+}
 /*----------*/
 
 .offer-price{
