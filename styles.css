@@ -472,3 +472,50 @@ opacity:.95;
 transition:opacity .3s;
 
 }
+.transition-section{
+
+padding:180px 8%;
+
+background:#ffffff;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.transition-content{
+
+max-width:980px;
+
+text-align:center;
+
+}
+
+.transition-text{
+
+display:flex;
+
+flex-direction:column;
+
+gap:22px;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:54px;
+
+font-weight:500;
+
+line-height:1.35;
+
+color:#202020;
+
+}
+
+.transition-text span{
+
+display:block;
+
+opacity:.96;
+
+}
