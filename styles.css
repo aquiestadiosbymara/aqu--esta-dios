@@ -807,3 +807,24 @@ opacity:.96;
     transform:translateY(-3px);
 
 }
+.offer-rainbow{
+
+position:absolute;
+
+top:-55px;
+
+right:45px;
+
+font-size:170px;
+
+opacity:.08;
+
+transform:rotate(-8deg);
+
+pointer-events:none;
+
+user-select:none;
+
+filter:grayscale(.2);
+
+}
