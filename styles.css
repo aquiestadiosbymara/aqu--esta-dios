@@ -724,7 +724,7 @@ gap:16px;
     margin-bottom:28px;
 
 }
-.offer-includes span{
+.offer-includes p{
 
 display:flex;
 align-items:center;
@@ -732,9 +732,11 @@ justify-content:center;
 
 padding:14px 22px;
 
+margin:0;
+
 background:#fffdf8;
 
-border:1px solid rgba(201,165,92,.20);
+border:1px solid rgba(201,165,92,.18);
 
 border-radius:999px;
 
@@ -744,21 +746,18 @@ font-weight:500;
 
 color:#3d3d3d;
 
-box-shadow:
-0 8px 22px rgba(0,0,0,.04);
+box-shadow:0 8px 22px rgba(0,0,0,.04);
 
 transition:.35s;
 
 }
-.offer-includes span:hover{
+.offer-includes p:hover{
 
 transform:translateY(-3px);
 
 border-color:#d4b36a;
 
-box-shadow:
-
-0 12px 28px rgba(212,179,106,.18);
+box-shadow:0 12px 30px rgba(212,179,106,.18);
 
 }
 /*----------*/
