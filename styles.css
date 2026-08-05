@@ -156,9 +156,8 @@ font-size:74px;
 font-weight:600;
 
 margin-top:18px;
-
-margin-left:140px;
-
+margin-left:0;
+text-align:center;
 z-index:3;
 
 position:relative;
