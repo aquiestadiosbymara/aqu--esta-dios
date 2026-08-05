@@ -572,6 +572,8 @@ overflow:hidden;
 
 transition:.45s;
 
+cursor:pointer;
+
 }
 .offer-card::before{
 
