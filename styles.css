@@ -731,7 +731,7 @@ align-items:center;
 justify-content:center;
 
 padding:14px 22px;
-
+flex:0 0 calc(50% - 8px);
 margin:0;
 
 background:#fffdf8;
