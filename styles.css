@@ -1170,12 +1170,24 @@ color:#666;
 
 .story-front{
 
-    background:#ffffff;
+background:linear-gradient(180deg,#ffffff,#fffdf9);
 
-    border:1px solid rgba(212,175,55,.25);
+border:1px solid rgba(212,175,55,.30);
 
-    box-shadow:
-    0 25px 70px rgba(0,0,0,.08);
+box-shadow:
+0 25px 70px rgba(0,0,0,.08),
+0 0 80px rgba(212,175,55,.12);
+
+transition:.45s ease;
+
+}
+.story-card:hover .story-front{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 35px 90px rgba(0,0,0,.10),
+0 0 100px rgba(212,175,55,.22);
 
 }
 
