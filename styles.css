@@ -1179,6 +1179,31 @@ box-shadow:
 0 0 80px rgba(212,175,55,.12);
 
 transition:.45s ease;
+position:relative;
+overflow:hidden;
+}
+.story-front::before{
+
+content:"";
+
+position:absolute;
+
+width:260px;
+height:260px;
+
+background:radial-gradient(circle,
+rgba(255,238,180,.65) 0%,
+rgba(255,240,200,.28) 40%,
+transparent 72%);
+
+top:-120px;
+right:-80px;
+
+opacity:.55;
+
+transition:.6s;
+
+pointer-events:none;
 
 }
 .story-card:hover .story-front{
@@ -1190,7 +1215,13 @@ box-shadow:
 0 0 100px rgba(212,175,55,.22);
 
 }
+.story-card:hover .story-front::before{
 
+opacity:1;
+
+transform:scale(1.15);
+
+}
 .story-front span{
 
     font-size:14px;
