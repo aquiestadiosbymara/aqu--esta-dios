@@ -1024,7 +1024,21 @@ color:#666;
 
 .footer{
 
-    margin:120px 0 40px;
+    margin-top:180px;
+
+    background:#faf8f4;
+
+    border-top:1px solid rgba(201,165,92,.15);
+
+    padding:55px 20px;
+
+}
+
+.footer-inner{
+
+    max-width:1200px;
+
+    margin:auto;
 
     text-align:center;
 
@@ -1034,10 +1048,24 @@ color:#666;
 
     font-family:'Outfit',sans-serif;
 
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#222;
+
+    margin-bottom:8px;
+
+}
+
+.footer span{
+
+    font-family:'Outfit',sans-serif;
+
     font-size:15px;
 
-    color:#8b8b8b;
+    color:#8d8d8d;
 
-    letter-spacing:.5px;
+    letter-spacing:.3px;
 
 }
