@@ -1020,3 +1020,24 @@ line-height:1.8;
 color:#666;
 
 }
+/* ===== FOOTER ===== */
+
+.footer{
+
+    margin:120px 0 40px;
+
+    text-align:center;
+
+}
+
+.footer p{
+
+    font-family:'Outfit',sans-serif;
+
+    font-size:15px;
+
+    color:#8b8b8b;
+
+    letter-spacing:.5px;
+
+}
