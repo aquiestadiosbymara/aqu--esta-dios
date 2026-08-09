@@ -372,6 +372,82 @@ document.querySelectorAll(".story-card").forEach(card => {
 
 });
 </script>
+         <script>
+
+const storyStages = [
+
+    {
+        title: "Aprendí a sobrevivir, pero no a vivir.",
+        text: `Durante mucho tiempo cargué con responsabilidades que no me correspondían.
+Aprendí a ser fuerte, a seguir adelante y a aparentar que podía con todo.
+Pero por dentro estaba perdida.
+
+Había aprendido a sobrevivir, pero todavía no sabía cómo vivir en paz.`
+    },
+
+    {
+        title: "Busqué fuera lo que me faltaba dentro.",
+        text: `Durante mucho tiempo intenté llenar un vacío que no sabía explicar.
+Buscaba sentirme querida, elegida y suficiente en las personas que tenía alrededor.
+
+Me rodeaba de gente, salía, buscaba aprobación y hacía todo lo posible por sentir que pertenecía a algún sitio. Pero cuanto más buscaba fuera, más perdida me sentía por dentro.
+
+Estaba rodeada de gente y, aun así, me sentía completamente sola.`
+    },
+
+    {
+        title: "Cuando más sola me sentía, Dios me habló.",
+        text: `Había llegado a un punto en el que ya no entendía lo que me estaba pasando. Me alejaba de cosas y personas que antes formaban parte de mi vida, pero tenía miedo de quedarme sola. Lloré muchísimo.
+
+Y fue precisamente en ese silencio cuando escuché por primera vez aquella voz que no sabía explicar.
+
+“No estás sola, estoy aquí contigo.”
+
+Y por primera vez, sentí paz.`
+    }
+
+];
+
+let currentStage = 0;
+let showingBack = false;
+
+const storyCard = document.getElementById("storyCard");
+const storyTitle = document.getElementById("storyTitle");
+const storyText = document.getElementById("storyText");
+const storyHint = document.getElementById("storyHint");
+
+storyCard.addEventListener("click", () => {
+
+    if (!showingBack) {
+
+        storyCard.parentElement.classList.add("flipped");
+
+        showingBack = true;
+
+        storyHint.textContent = "Pulsa para continuar →";
+
+    } else {
+
+        currentStage++;
+
+        if (currentStage >= storyStages.length) {
+            currentStage = 0;
+        }
+
+        storyCard.parentElement.classList.remove("flipped");
+
+        storyTitle.textContent = storyStages[currentStage].title;
+        storyText.textContent = storyStages[currentStage].text;
+
+        storyHint.textContent = "Pulsa para leer →";
+
+        showingBack = false;
+
+    }
+
+});
+
+</script>
     <footer class="footer">
 
     <div class="footer-inner">
@@ -383,6 +459,7 @@ document.querySelectorAll(".story-card").forEach(card => {
     </div>
 
 </footer>
+         
 </body>
 
 </html>
