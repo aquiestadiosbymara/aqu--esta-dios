@@ -1259,23 +1259,31 @@ transform:scale(1.15);
 
 .story-back{
 
-    background:#111;
+background:linear-gradient(
+135deg,
+#fffdf8 0%,
+#f8edcc 55%,
+#e8cf8b 100%
+);
 
-    color:white;
+color:#3d3d3d;
 
-    transform:rotateY(180deg);
+transform:rotateY(180deg);
 
-    box-shadow:
-    0 30px 80px rgba(0,0,0,.18);
+box-shadow:
+0 30px 80px rgba(0,0,0,.10),
+0 0 70px rgba(212,175,55,.18);
 
 }
 
 .story-back p{
 
-    line-height:1.8;
+line-height:1.75;
 
-    font-size:18px;
+font-size:17px;
 
-    color:#F4F4F4;
+color:#3d3d3d;
+
+margin:0;
 
 }
