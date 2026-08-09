@@ -428,14 +428,13 @@ storyCard.addEventListener("click", () => {
 
     } else {
 
-        currentStage++;
-
-        if (currentStage >= storyStages.length) {
-            currentStage = 0;
-        }
 
         storyCard.parentElement.classList.remove("flipped");
+currentStage++;
 
+if (currentStage >= storyStages.length) {
+    currentStage = 0;
+}
         storyTitle.textContent = storyStages[currentStage].title;
         storyText.textContent = storyStages[currentStage].text;
 
