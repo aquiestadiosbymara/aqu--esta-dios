@@ -372,16 +372,16 @@ document.querySelectorAll(".story-card").forEach(card => {
 
 });
 </script>
-         <script>
+        
+<script>
 
 const storyStages = [
 
     {
         title: "Aprendí a sobrevivir, pero no a vivir.",
-        text: `Durante mucho tiempo cargué con responsabilidades que no me correspondían.
-Aprendí a ser fuerte, a seguir adelante y a aparentar que podía con todo.
+        text: `Durante mucho tiempo cargué con responsabilidades que no me correspondían. 
+Aprendí a ser fuerte, a seguir adelante y a aparentar que podía con todo. 
 Pero por dentro estaba perdida.
-
 Había aprendido a sobrevivir, pero todavía no sabía cómo vivir en paz.`
     },
 
@@ -416,27 +416,29 @@ const storyTitle = document.getElementById("storyTitle");
 const storyText = document.getElementById("storyText");
 const storyHint = document.getElementById("storyHint");
 
-storyCard.addEventListener("click", () => {
+storyCard.addEventListener("click", function () {
 
-    if (!showingBack) {
+    if (showingBack === false) {
+
+        storyText.textContent = storyStages[currentStage].text;
 
         storyCard.parentElement.classList.add("flipped");
 
-        showingBack = true;
-
         storyHint.textContent = "Pulsa para continuar →";
+
+        showingBack = true;
 
     } else {
 
-
         storyCard.parentElement.classList.remove("flipped");
-currentStage++;
 
-if (currentStage >= storyStages.length) {
-    currentStage = 0;
-}
+        currentStage = currentStage + 1;
+
+        if (currentStage >= storyStages.length) {
+            currentStage = 0;
+        }
+
         storyTitle.textContent = storyStages[currentStage].title;
-        storyText.textContent = storyStages[currentStage].text;
 
         storyHint.textContent = "Pulsa para leer →";
 
