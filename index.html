@@ -368,7 +368,15 @@ document.querySelectorAll(".faq-question").forEach(question => {
     });
 
 });
+document.querySelectorAll(".story-card").forEach(card => {
 
+    card.addEventListener("click", () => {
+
+        card.classList.toggle("flipped");
+
+    });
+
+});
 </script>
     <footer class="footer">
 
