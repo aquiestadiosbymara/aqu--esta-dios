@@ -1122,8 +1122,10 @@ color:#666;
 }
 
 .story-card{
+    position:relative;
     width:420px;
     height:270px;
+    margin:60px auto;
     perspective:1200px;
 }
 
