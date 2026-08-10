@@ -465,28 +465,29 @@ storyCard.addEventListener("click", function () {
 
     } else {
 
-    storyCard.parentElement.classList.remove("flipped");
+        storyCard.parentElement.classList.remove("flipped");
 
-    currentStage = currentStage + 1;
+        if (currentStage === storyStages.length - 1) {
 
-    if (currentStage >= storyStages.length) {
+            storyCard.style.display = "none";
 
-        storyCard.style.display = "none";
+            document.getElementById("maraFinal").style.display = "flex";
 
-        document.getElementById("maraFinal").style.display = "flex";
+            iniciarMaraFinal();
 
-        iniciarMaraFinal();
+            return;
+        }
 
-        return;
+        currentStage = currentStage + 1;
+
+        storyTitle.textContent = storyStages[currentStage].title;
+
+        storyHint.textContent = "Pulsa para leer →";
+
+        showingBack = false;
+
     }
 
-    storyTitle.textContent = storyStages[currentStage].title;
-
-    storyHint.textContent = "Pulsa para leer →";
-
-    showingBack = false;
-
-}
 });
 function iniciarMaraFinal() {
 
