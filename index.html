@@ -491,7 +491,51 @@ storyCard.addEventListener("click", function () {
     }
 
 });
+function iniciarMaraFinal() {
 
+    const final = document.getElementById("maraFinal");
+    const palabras = document.querySelectorAll(".mara-palabras span");
+    const antes = document.querySelector(".mara-antes");
+    const ahora = document.querySelector(".mara-ahora");
+    const cierre = document.querySelector(".mara-cierre");
+
+    final.style.display = "flex";
+
+    palabras.forEach((palabra, index) => {
+
+        setTimeout(() => {
+            palabra.classList.add("visible");
+        }, index * 900);
+
+    });
+
+    const tiempoPalabras = palabras.length * 900 + 1800;
+
+    setTimeout(() => {
+
+        palabras.forEach(palabra => {
+            palabra.classList.remove("visible");
+        });
+
+        antes.style.opacity = "1";
+
+    }, tiempoPalabras);
+
+    setTimeout(() => {
+
+        antes.style.opacity = "0";
+        ahora.style.opacity = "1";
+
+    }, tiempoPalabras + 10000);
+
+    setTimeout(() => {
+
+        ahora.style.opacity = "0";
+        cierre.style.opacity = "1";
+
+    }, tiempoPalabras + 20000);
+
+}
 </script>
          <div id="maraFinal">
 
