@@ -1283,3 +1283,105 @@ box-shadow:
     max-width:330px;
     box-sizing:border-box;
 }
+#maraFinal {
+    display: none;
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    background: #ffffff;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 30px;
+    box-sizing: border-box;
+}
+
+.mara-palabras {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.mara-palabras span {
+    position: absolute;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #C79A2E;
+    opacity: 0;
+    transform: translateZ(-500px) scale(.3);
+    transition:
+        opacity .7s ease,
+        transform 1.4s cubic-bezier(.2,.8,.2,1);
+}
+
+.mara-palabras span.visible {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+}
+
+.mara-antes,
+.mara-ahora,
+.mara-cierre {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mara-antes,
+.mara-ahora,
+.mara-cierre {
+    transition: opacity 1.2s ease;
+}
+
+.mara-label {
+    font-size: 15px;
+    letter-spacing: 7px;
+    color: #C79A2E;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.mara-antes h2,
+.mara-ahora h2 {
+    max-width: 750px;
+    margin: 0 0 25px;
+    font-size: 42px;
+    line-height: 1.15;
+    color: #222222;
+}
+
+.mara-antes p,
+.mara-ahora p {
+    max-width: 620px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #555555;
+}
+
+.mara-ahora h2 {
+    color: #C79A2E;
+}
+
+.mara-cierre p,
+.mara-cierre strong {
+    margin: 0;
+    font-size: 34px;
+    line-height: 1.4;
+}
+
+.mara-cierre strong {
+    color: #C79A2E;
+}
