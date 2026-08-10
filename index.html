@@ -470,8 +470,17 @@ storyCard.addEventListener("click", function () {
         currentStage = currentStage + 1;
 
         if (currentStage >= storyStages.length) {
-            currentStage = 0;
-        }
+
+    storyCard.parentElement.classList.remove("flipped");
+
+    storyCard.style.display = "none";
+
+    document.getElementById("maraFinal").style.display = "flex";
+
+    iniciarMaraFinal();
+
+    return;
+}
 
         storyTitle.textContent = storyStages[currentStage].title;
 
@@ -484,6 +493,61 @@ storyCard.addEventListener("click", function () {
 });
 
 </script>
+         <div id="maraFinal">
+
+    <div class="mara-palabras">
+
+        <span>PAZ</span>
+        <span>AMOR</span>
+        <span>ABUNDANCIA</span>
+        <span>IDENTIDAD</span>
+        <span>PROPÓSITO</span>
+        <span>LIBERTAD</span>
+        <span>DIOS PRIMERO</span>
+
+    </div>
+
+    <div class="mara-antes">
+
+        <div class="mara-label">ANTES</div>
+
+        <h2>Busqué fuera lo que me faltaba dentro.</h2>
+
+        <p>
+            Busqué aprobación.<br>
+            Busqué sentirme querida.<br>
+            Busqué pertenecer.<br>
+            Busqué llenar un vacío que nadie podía llenar.
+        </p>
+
+    </div>
+
+    <div class="mara-ahora">
+
+        <div class="mara-label">AHORA</div>
+
+        <h2>LIBRE EN DIOS.</h2>
+
+        <p>
+            Ya no busco fuera lo que Dios llenó dentro de mí.
+            <br><br>
+            Vivo desde el amor, la paz y la abundancia.
+            Pongo a Dios primero.
+            Ya no vivo para el mundo.
+            <br><br>
+            <strong>Vivo para Dios.</strong>
+        </p>
+
+    </div>
+
+    <div class="mara-cierre">
+
+        <p>Antes vivía para el mundo.</p>
+        <strong>Ahora vivo para Dios.</strong>
+
+    </div>
+
+</div>
     <footer class="footer">
 
     <div class="footer-inner">
