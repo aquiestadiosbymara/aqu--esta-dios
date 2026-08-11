@@ -442,7 +442,6 @@ Aprendí a conocer Su voz. Y, con el tiempo, a obedecerla.`
 
 ];
 
-
 let currentStage = 0;
 let showingBack = false;
 
@@ -463,30 +462,44 @@ storyCard.addEventListener("click", function () {
 
         showingBack = true;
 
-    } else {
+        return;
+    }
 
-        storyCard.parentElement.classList.remove("flipped");
+    /*
+     * SEGUNDO CLIC
+     * Primero cerramos la cara trasera.
+     */
+    storyCard.parentElement.classList.remove("flipped");
 
-        if (currentStage === storyStages.length - 1) {
+    /*
+     * Si estamos en la tarjeta 6,
+     * NO hacemos nada más inmediatamente.
+     * Esperamos a que termine la animación de giro.
+     */
+    if (currentStage === 5) {
+
+        setTimeout(function () {
 
             storyCard.style.display = "none";
 
-            document.getElementById("maraFinal").style.display = "flex";
-
             iniciarMaraFinal();
 
-            return;
-        }
+        }, 800);
 
-        currentStage = currentStage + 1;
-
-        storyTitle.textContent = storyStages[currentStage].title;
-
-        storyHint.textContent = "Pulsa para leer →";
-
-        showingBack = false;
-
+        return;
     }
+
+    /*
+     * Tarjetas 1 → 5:
+     * pasamos normalmente a la siguiente.
+     */
+    currentStage++;
+
+    storyTitle.textContent = storyStages[currentStage].title;
+
+    storyHint.textContent = "Pulsa para leer →";
+
+    showingBack = false;
 
 });
 function iniciarMaraFinal() {
