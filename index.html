@@ -478,17 +478,18 @@ storyCard.addEventListener("click", function () {
      */
     if (currentStage === 5) {
 
-        setTimeout(function () {
+    storyCard.parentElement.classList.remove("flipped");
 
-            storyCard.style.display = "none";
+    setTimeout(function () {
 
-            iniciarMaraFinal();
+        storyCard.style.display = "none";
 
-        }, 800);
+        iniciarMaraFinal();
 
-        return;
-    }
+    }, 800);
 
+    return;
+}
     /*
      * Tarjetas 1 → 5:
      * pasamos normalmente a la siguiente.
