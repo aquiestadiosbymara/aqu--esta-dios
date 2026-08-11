@@ -1298,6 +1298,8 @@ box-shadow:
     box-sizing: border-box;
 }
 
+/* PALABRAS QUE SALEN HACIA FUERA */
+
 .mara-palabras {
     position: absolute;
     inset: 0;
@@ -1305,6 +1307,7 @@ box-shadow:
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    z-index: 10;
 }
 
 .mara-palabras span {
@@ -1314,16 +1317,18 @@ box-shadow:
     letter-spacing: 5px;
     color: #C79A2E;
     opacity: 0;
-    transform: translateZ(-500px) scale(.3);
+    transform: translateY(120px) scale(.35);
     transition:
-        opacity .7s ease,
-        transform 1.4s cubic-bezier(.2,.8,.2,1);
+        opacity .8s ease,
+        transform 1.5s cubic-bezier(.2,.8,.2,1);
 }
 
 .mara-palabras span.visible {
     opacity: 1;
-    transform: translateZ(0) scale(1);
+    transform: translateY(0) scale(1);
 }
+
+/* ANTES / AHORA / CIERRE */
 
 .mara-antes,
 .mara-ahora,
@@ -1338,12 +1343,8 @@ box-shadow:
     box-sizing: border-box;
     opacity: 0;
     pointer-events: none;
-}
-
-.mara-antes,
-.mara-ahora,
-.mara-cierre {
     transition: opacity 1.2s ease;
+    z-index: 5;
 }
 
 .mara-label {
