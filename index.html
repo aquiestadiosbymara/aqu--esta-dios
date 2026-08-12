@@ -473,14 +473,23 @@ storyCard.addEventListener("click", function () {
     setTimeout(function () {
 
         const storyContainer = storyCard.parentElement;
+const final = document.getElementById("maraFinal");
 
-        storyContainer.style.display = "none";
+storyContainer.style.position = "relative";
 
-        const final = document.getElementById("maraFinal");
+storyCard.style.visibility = "hidden";
 
-        final.style.display = "flex";
+final.style.display = "flex";
 
-        iniciarMaraFinal();
+final.style.position = "absolute";
+final.style.top = "0";
+final.style.left = "0";
+final.style.width = "100%";
+final.style.height = "100%";
+
+storyContainer.appendChild(final);
+
+iniciarMaraFinal();
 
     }, 800);
 
