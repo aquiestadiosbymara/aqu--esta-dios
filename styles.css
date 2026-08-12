@@ -1289,28 +1289,29 @@ box-shadow:
 
 #maraFinal {
     display: none;
-   position: relative;
-    inset: 0;
+
+    position: relative;
+
     width: 100%;
-min-height: 650px;
-height: 650px;
-    min-height: 100vh;
+    height: 650px;
+    min-height: 650px;
 
     background: #ffffff;
 
     overflow: hidden;
+
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     text-align: center;
 
     padding: 60px 30px;
+
     box-sizing: border-box;
 
-    z-index: 99999;
+    z-index: 1;
 }
-
-
 /* =========================
    PALABRAS
    ========================= */
