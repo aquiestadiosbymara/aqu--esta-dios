@@ -1285,29 +1285,30 @@ box-shadow:
 }
 #maraFinal {
     display: none;
-    position: relative;
-    width: 100%;
-    min-height: 650px;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
     background: #ffffff;
     overflow: hidden;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 80px 30px;
+    padding: 60px 30px;
     box-sizing: border-box;
+    z-index: 99999;
 }
 
-/* PALABRAS QUE SALEN HACIA FUERA */
+/* PALABRAS */
 
 .mara-palabras {
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
-    z-index: 10;
 }
 
 .mara-palabras span {
@@ -1317,18 +1318,62 @@ box-shadow:
     letter-spacing: 5px;
     color: #C79A2E;
     opacity: 0;
-    transform: translateY(120px) scale(.35);
+    transform: translateZ(-500px) scale(.3);
     transition:
-        opacity .8s ease,
-        transform 1.5s cubic-bezier(.2,.8,.2,1);
+        opacity .7s ease,
+        transform 1.4s cubic-bezier(.2,.8,.2,1);
+    white-space: nowrap;
+}
+
+/* CADA PALABRA APARECE EN UN SITIO DIFERENTE */
+
+.mara-palabras span:nth-child(1) {
+    top: 18%;
+    left: 20%;
+}
+
+.mara-palabras span:nth-child(2) {
+    top: 30%;
+    right: 18%;
+}
+
+.mara-palabras span:nth-child(3) {
+    top: 48%;
+    left: 12%;
+}
+
+.mara-palabras span:nth-child(4) {
+    top: 62%;
+    right: 15%;
+}
+
+.mara-palabras span:nth-child(5) {
+    top: 22%;
+    left: 48%;
+}
+
+.mara-palabras span:nth-child(6) {
+    top: 72%;
+    left: 38%;
+}
+
+.mara-palabras span:nth-child(7) {
+    top: 45%;
+    left: 50%;
+    transform: translateZ(-500px) scale(.3) translateX(-50%);
 }
 
 .mara-palabras span.visible {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateZ(0) scale(1);
 }
 
-/* ANTES / AHORA / CIERRE */
+.mara-palabras span:nth-child(7).visible {
+    transform: translateZ(0) scale(1) translateX(-50%);
+}
+
+
+/* BLOQUES FINALES */
 
 .mara-antes,
 .mara-ahora,
@@ -1344,7 +1389,6 @@ box-shadow:
     opacity: 0;
     pointer-events: none;
     transition: opacity 1.2s ease;
-    z-index: 5;
 }
 
 .mara-label {
