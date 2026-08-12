@@ -468,19 +468,24 @@ storyCard.addEventListener("click", function () {
      * NO hacemos nada más inmediatamente.
      * Esperamos a que termine la animación de giro.
      */
-    if (currentStage === 5) {
-
-    storyCard.parentElement.classList.remove("flipped");
+   if (currentStage === 5) {
 
     setTimeout(function () {
 
-        storyCard.style.display = "none";
+        const storyContainer = storyCard.parentElement;
+
+        storyContainer.style.display = "none";
+
+        const final = document.getElementById("maraFinal");
+
+        final.style.display = "flex";
 
         iniciarMaraFinal();
 
     }, 800);
 
     return;
+}
 }
     /*
      * Tarjetas 1 → 5:
