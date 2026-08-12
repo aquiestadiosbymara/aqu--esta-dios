@@ -870,7 +870,7 @@ filter:grayscale(.2);
 max-width:1100px;
 margin:180px auto;
 padding:0 8%;
-
+padding-top: 180px;
 }
 
 .faq-header{
@@ -1298,11 +1298,15 @@ box-shadow:
 
     background: #ffffff;
 
-    margin: 0 auto 140px auto;
-
+    margin: 0 auto;
+padding-bottom: 180px;
     overflow: hidden;
 }
-
+#maraFinal::after {
+    content: "";
+    display: block;
+    height: 180px;
+}
 
 /* ================================
    PALABRAS
