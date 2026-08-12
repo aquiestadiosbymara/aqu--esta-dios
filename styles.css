@@ -1283,129 +1283,83 @@ box-shadow:
     max-width:330px;
     box-sizing:border-box;
 }
-/* =========================
-   MARA FINAL
-   ========================= */
+/* ================================
+   EFECTO FINAL — MARA
+================================ */
 
 #maraFinal {
-    display: none;
-
     position: relative;
-
     width: 100%;
-    height: 650px;
     min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: #ffffff;
 
+    margin: 0 auto 140px auto;
+
     overflow: hidden;
-
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    text-align: center;
-
-    padding: 60px 30px;
-
-    box-sizing: border-box;
-
-    z-index: 1;
 }
-/* =========================
+
+
+/* ================================
    PALABRAS
-   ========================= */
+================================ */
 
 .mara-palabras {
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
 
-    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 28px;
+
+    padding: 60px 20px;
 }
 
 
-.mara-palabras span {
-    position: absolute;
+/* Cada palabra ocupa su propio espacio */
 
+.mara-palabras span {
+    position: relative;
+
+    display: block;
+
+    font-family: "Outfit", sans-serif;
     font-size: 28px;
     font-weight: 500;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 
-    color: #C79A2E;
+    color: #c99522;
 
     opacity: 0;
 
-    transform: scale(0.65);
+    transform: translateY(15px);
 
     transition:
         opacity 0.8s ease,
-        transform 1.2s cubic-bezier(.2,.8,.2,1);
+        transform 0.8s ease;
 
     white-space: nowrap;
 }
 
 
+/* Cuando aparece */
+
 .mara-palabras span.visible {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
 }
 
 
-/* =========================
-   POSICIÓN DE CADA PALABRA
-   ========================= */
-
-.mara-palabras span:nth-child(1) {
-    top: 18%;
-    left: 18%;
-}
-
-.mara-palabras span:nth-child(2) {
-    top: 27%;
-    right: 18%;
-}
-
-.mara-palabras span:nth-child(3) {
-    top: 48%;
-    left: 10%;
-}
-
-.mara-palabras span:nth-child(4) {
-    top: 65%;
-    right: 14%;
-}
-
-.mara-palabras span:nth-child(5) {
-    top: 16%;
-    left: 50%;
-    transform: translateX(-50%) scale(0.65);
-}
-
-.mara-palabras span:nth-child(5).visible {
-    transform: translateX(-50%) scale(1);
-}
-
-.mara-palabras span:nth-child(6) {
-    bottom: 14%;
-    left: 34%;
-}
-
-.mara-palabras span:nth-child(7) {
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%) scale(0.65);
-}
-
-.mara-palabras span:nth-child(7).visible {
-    transform: translateX(-50%) scale(1);
-}
-
-
-/* =========================
-   ANTES / AHORA / CIERRE
-   ========================= */
+/* ================================
+   TEXTOS POSTERIORES
+================================ */
 
 .mara-antes,
 .mara-ahora,
@@ -1418,70 +1372,68 @@ box-shadow:
     align-items: center;
     justify-content: center;
 
-    padding: 40px;
-    box-sizing: border-box;
+    text-align: center;
+
+    padding: 60px 30px;
 
     opacity: 0;
-    pointer-events: none;
 
     transition: opacity 1.2s ease;
 }
 
 
-/* =========================
-   TEXTOS
-   ========================= */
-
 .mara-label {
-    font-size: 15px;
-    letter-spacing: 7px;
+    margin-bottom: 20px;
 
-    color: #C79A2E;
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
 
-    font-weight: 700;
+    letter-spacing: 4px;
 
-    margin-bottom: 25px;
+    color: #c99522;
 }
 
 
 .mara-antes h2,
 .mara-ahora h2 {
-    max-width: 750px;
+    max-width: 650px;
 
-    margin: 0 0 25px;
+    margin-bottom: 25px;
 
-    font-size: 42px;
-    line-height: 1.15;
+    font-family: "Outfit", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
 
-    color: #222222;
+    color: #222;
 }
 
 
 .mara-antes p,
 .mara-ahora p {
-    max-width: 620px;
+    max-width: 600px;
 
-    font-size: 20px;
-    line-height: 1.7;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
 
-    color: #555555;
+    color: #555;
 }
 
 
-.mara-ahora h2 {
-    color: #C79A2E;
+.mara-cierre p {
+    margin: 0 0 10px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 28px;
+
+    color: #222;
 }
 
 
-.mara-cierre p,
 .mara-cierre strong {
-    margin: 0;
-
+    font-family: "Outfit", sans-serif;
     font-size: 34px;
-    line-height: 1.4;
-}
 
-
-.mara-cierre strong {
-    color: #C79A2E;
+    color: #c99522;
 }
