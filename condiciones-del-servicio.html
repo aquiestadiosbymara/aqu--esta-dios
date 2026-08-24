@@ -13,14 +13,24 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
-
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f8f7f3;
+            color: #242424;
+            font-family: "Inter", sans-serif;
+            line-height: 1.8;
+        }
 
         .legal-page {
             max-width: 900px;
             margin: 0 auto;
-            padding: 150px 30px 100px;
+            padding: 80px 30px 100px;
         }
 
         .legal-header {
@@ -28,98 +38,120 @@
             margin-bottom: 70px;
         }
 
-        .legal-header span {
+        .legal-mini-title {
             display: block;
             font-size: 12px;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
             text-transform: uppercase;
+            color: #c79524;
             margin-bottom: 20px;
-            opacity: 0.65;
+            font-weight: 600;
         }
 
         .legal-header h1 {
+            margin: 0 0 15px;
             font-family: "Cormorant Garamond", serif;
-            font-size: clamp(48px, 7vw, 78px);
-            font-weight: 500;
-            margin: 0 0 20px;
+            font-size: 58px;
+            font-weight: 600;
+            line-height: 1.05;
         }
 
-        .legal-header p {
+        .legal-date {
+            margin: 0;
+            color: #777;
             font-size: 14px;
-            opacity: 0.6;
         }
 
-        .legal-content h2 {
+        .legal-section {
+            margin-bottom: 42px;
+        }
+
+        .legal-section h2 {
+            margin: 0 0 15px;
             font-family: "Outfit", sans-serif;
-            font-size: 22px;
+            font-size: 25px;
             font-weight: 600;
-            margin-top: 55px;
-            margin-bottom: 20px;
+            line-height: 1.3;
         }
 
-        .legal-content p {
-            font-family: "Inter", sans-serif;
+        .legal-section h3 {
+            margin: 25px 0 10px;
+            font-family: "Outfit", sans-serif;
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .legal-section p {
+            margin: 0 0 15px;
             font-size: 15px;
-            line-height: 1.9;
-            margin: 0 0 20px;
+            color: #4d4d4d;
         }
 
-        .legal-content a {
-            color: inherit;
-            text-decoration: underline;
-        }
-
-        .legal-content strong {
-            font-weight: 600;
-        }
-
-        .legal-list {
-            margin: 20px 0 25px;
+        .legal-section ul {
+            margin: 10px 0 20px;
             padding-left: 25px;
+            color: #4d4d4d;
         }
 
-        .legal-list li {
-            font-family: "Inter", sans-serif;
+        .legal-section li {
+            margin-bottom: 8px;
             font-size: 15px;
-            line-height: 1.9;
-            margin-bottom: 10px;
         }
 
-        .legal-back {
-            text-align: center;
+        .legal-highlight {
+            padding: 25px 30px;
+            margin: 25px 0;
+            background: #ffffff;
+            border-left: 3px solid #c79524;
+        }
+
+        .legal-highlight p {
+            margin: 0;
+        }
+
+        .legal-footer {
             margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #dedbd3;
+            text-align: center;
         }
 
-        .legal-back a {
-            display: inline-block;
-            padding: 14px 28px;
-            border: 1px solid currentColor;
-            border-radius: 30px;
-            color: inherit;
+        .legal-footer p {
+            margin: 5px 0;
+            color: #777;
+            font-size: 13px;
+        }
+
+        .legal-footer a {
+            color: #242424;
             text-decoration: none;
-            font-family: "Inter", sans-serif;
-            font-size: 14px;
         }
 
         @media (max-width: 600px) {
 
             .legal-page {
-                padding: 120px 22px 70px;
+                padding: 55px 22px 70px;
             }
 
             .legal-header {
                 margin-bottom: 50px;
             }
 
-            .legal-content h2 {
-                font-size: 20px;
-                margin-top: 45px;
+            .legal-header h1 {
+                font-size: 45px;
             }
 
-            .legal-content p,
-            .legal-list li {
+            .legal-section h2 {
+                font-size: 22px;
+            }
+
+            .legal-section p,
+            .legal-section li {
                 font-size: 14px;
-                line-height: 1.8;
+            }
+
+            .legal-highlight {
+                padding: 20px;
             }
 
         }
@@ -130,390 +162,516 @@
 
 <body>
 
-    <header>
+<main class="legal-page">
 
-        <div class="logo">
+    <header class="legal-header">
 
-            <div class="logo-title">
-                AQUÍ ESTÁ DIOS
-            </div>
+        <span class="legal-mini-title">
+            Aquí Está Dios
+        </span>
 
-            <div class="logo-subtitle">
-                by Mara Triguero
-            </div>
+        <h1>
+            Condiciones del Servicio
+        </h1>
 
-        </div>
-
-        <nav>
-
-            <a href="index.html" class="btn-nav">
-                Volver
-            </a>
-
-        </nav>
+        <p class="legal-date">
+            Última actualización: agosto de 2026
+        </p>
 
     </header>
 
 
-    <main class="legal-page">
+    <section class="legal-section">
 
-        <div class="legal-header">
+        <h2>1. Identificación</h2>
 
-            <span>Información legal</span>
+        <p>
+            Las presentes Condiciones del Servicio regulan el acceso,
+            contratación y utilización de los servicios ofrecidos a través
+            de Aquí Está Dios.
+        </p>
 
-            <h1>Condiciones del Servicio</h1>
+        <p>
+            La titular y prestadora de los servicios es
+            <strong>Mara Triguero</strong>, persona física, con domicilio
+            en Calle Naufragio 33 y correo electrónico de contacto
+            <strong>aquiestadiosbymara@hotmail.com</strong>.
+        </p>
 
-            <p>Última actualización: agosto de 2026</p>
+        <p>
+            En adelante, será denominada como Aquí Está Dios o la titular.
+        </p>
+
+    </section>
+
+
+    <section class="legal-section">
+
+        <h2>2. Aceptación de las condiciones</h2>
+
+        <p>
+            La contratación de Sala Arcoíris implica la lectura y aceptación
+            de las presentes Condiciones del Servicio.
+        </p>
+
+        <p>
+            La persona usuaria declara tener capacidad legal suficiente para
+            contratar los servicios y se compromete a proporcionar información
+            veraz cuando sea necesaria para gestionar la contratación.
+        </p>
+
+        <p>
+            Estas condiciones estarán disponibles para su consulta antes de
+            realizar la contratación.
+        </p>
+
+    </section>
+
+
+    <section class="legal-section">
+
+        <h2>3. Servicio ofrecido</h2>
+
+        <p>
+            Actualmente, Aquí Está Dios ofrece una única experiencia:
+            <strong>Sala Arcoíris</strong>.
+        </p>
+
+        <div class="legal-highlight">
+
+            <p>
+                <strong>Sala Arcoíris</strong><br><br>
+
+                Inversión: <strong>444 €</strong><br>
+                Duración: <strong>3 meses</strong>
+            </p>
 
         </div>
 
+        <p>
+            Sala Arcoíris es una experiencia de acompañamiento, formación
+            y desarrollo personal y espiritual centrada en Dios, la identidad,
+            la transformación y el propósito.
+        </p>
 
-        <div class="legal-content">
+        <p>
+            La experiencia incluye:
+        </p>
 
+        <ul>
+            <li>3 meses de acompañamiento.</li>
+            <li>2 llamadas en directo cada semana.</li>
+            <li>12 clases grabadas.</li>
+            <li>Acceso a una comunidad privada de WhatsApp.</li>
+        </ul>
 
-            <h2>1. Identificación</h2>
+        <p>
+            Las características concretas de la experiencia serán las
+            comunicadas en la página de contratación y en los materiales
+            informativos correspondientes en el momento de la contratación.
+        </p>
 
-            <p>
-                Las presentes Condiciones del Servicio regulan el acceso, contratación y utilización de los programas y servicios ofrecidos a través de Aquí Está Dios.
-            </p>
+    </section>
 
-            <p>
-                La titular y prestadora de los servicios es <strong>Mara Triguero</strong>, persona física, con domicilio en Calle Naufragio 33 y correo electrónico de contacto <a href="mailto:aquiestadiosbymara@hotmail.com">aquiestadiosbymara@hotmail.com</a>.
-            </p>
 
-            <p>
-                En adelante, será denominada como <strong>Aquí Está Dios</strong> o la titular.
-            </p>
+    <section class="legal-section">
 
+        <h2>4. Acceso a los contenidos y servicios</h2>
 
-            <h2>2. Aceptación de las condiciones</h2>
+        <p>
+            El acceso a los contenidos y servicios contratados se facilitará
+            después de la confirmación del pago y de acuerdo con el procedimiento
+            indicado por Aquí Está Dios.
+        </p>
 
-            <p>
-                La contratación de cualquiera de los programas o servicios ofrecidos por Aquí Está Dios implica la lectura y aceptación de las presentes Condiciones del Servicio.
-            </p>
+        <p>
+            Los contenidos, materiales y accesos son personales e intransferibles
+            y no podrán compartirse con terceras personas.
+        </p>
 
-            <p>
-                La persona usuaria declara tener capacidad legal suficiente para contratar los servicios y se compromete a proporcionar información veraz cuando sea necesaria para gestionar la contratación.
-            </p>
+        <p>
+            La titular podrá adoptar medidas razonables para proteger los
+            contenidos frente a accesos no autorizados.
+        </p>
 
-            <p>
-                Estas condiciones estarán disponibles para su consulta antes de realizar la contratación.
-            </p>
+        <p>
+            El acceso a determinados servicios podrá depender del correcto
+            funcionamiento de plataformas externas utilizadas para prestar
+            el servicio.
+        </p>
 
+    </section>
 
-            <h2>3. Servicios ofrecidos</h2>
 
-            <p>
-                Aquí Está Dios ofrece programas de acompañamiento, desarrollo personal y espiritual, contenidos formativos grabados, mentorías y espacios de comunidad.
-            </p>
+    <section class="legal-section">
 
-            <p>
-                Las características concretas, precio, duración y elementos incluidos en cada servicio serán las indicadas en la página de contratación correspondiente en el momento de realizar la compra.
-            </p>
+        <h2>5. Mentorías y comunidad</h2>
 
-            <p>
-                <strong>Fase Acércate</strong>
-            </p>
+        <p>
+            Las dos llamadas en directo semanales se desarrollarán en los días,
+            horarios y condiciones comunicados por Aquí Está Dios.
+        </p>
 
-            <p>
-                Precio: 77 € al mes.
-            </p>
+        <p>
+            La programación podrá modificarse por motivos organizativos,
+            técnicos o de fuerza mayor, procurando mantener la prestación
+            del servicio contratado.
+        </p>
 
-            <p>
-                Fase Acércate funciona mediante una suscripción mensual. No existe un periodo mínimo de permanencia.
-            </p>
+        <p>
+            El acceso a la comunidad privada de WhatsApp está destinado
+            exclusivamente a las personas que tengan derecho a dicho acceso
+            por haber contratado Sala Arcoíris.
+        </p>
 
-            <p>
-                El servicio incluye el acceso a los contenidos grabados incluidos en la fase correspondiente, así como el acceso a las mentorías grupales y demás elementos que se indiquen en la oferta vigente.
-            </p>
+        <p>
+            La participación en la comunidad deberá realizarse de forma
+            respetuosa.
+        </p>
 
-            <p>
-                La persona suscrita puede cancelar su suscripción en cualquier momento. La cancelación evitará los siguientes cargos, pero no supondrá la pérdida inmediata del periodo que ya haya sido pagado.
-            </p>
+        <p>
+            No se permitirá utilizar la comunidad para realizar actividades
+            ilícitas, compartir contenido ofensivo, acosar a otras personas,
+            realizar publicidad no autorizada o perjudicar el normal
+            funcionamiento del espacio.
+        </p>
 
-            <p>
-                Por tanto, una vez cancelada la suscripción, la persona conservará el acceso al servicio durante el periodo que ya haya abonado, salvo que concurra alguna causa legal o contractual que determine lo contrario.
-            </p>
+    </section>
 
-            <p>
-                <strong>Fase Ríndete</strong>
-            </p>
 
-            <p>
-                Precio: 647 € en un único pago.
-            </p>
+    <section class="legal-section">
 
-            <p>
-                Fase Ríndete proporciona acceso durante seis meses a los elementos incluidos en la oferta correspondiente.
-            </p>
+        <h2>6. Pago</h2>
 
-            <p>
-                La oferta incluye el programa grabado Aquí Está Dios en 13 pasos, acceso a Fase Acércate durante el periodo correspondiente, una llamada inicial individual, mentorías y acceso a la comunidad privada de WhatsApp, de acuerdo con las condiciones y disponibilidad indicadas en la página de contratación.
-            </p>
+        <p>
+            El precio de Sala Arcoíris es de <strong>444 €</strong>.
+        </p>
 
+        <p>
+            El pago se realizará mediante <strong>Wise</strong>, siguiendo
+            las instrucciones indicadas en la página o proceso de contratación.
+        </p>
 
-            <h2>4. Acceso a los contenidos y servicios</h2>
+        <p>
+            Los pagos realizados mediante Wise estarán sujetos también a las
+            condiciones y políticas aplicables de dicha plataforma.
+        </p>
 
-            <p>
-                El acceso a los contenidos y servicios contratados se facilitará después de la confirmación del pago y de acuerdo con el procedimiento indicado por Aquí Está Dios.
-            </p>
+        <p>
+            El acceso a la experiencia se facilitará una vez confirmado
+            correctamente el pago.
+        </p>
+
+    </section>
+
+
+    <section class="legal-section">
+
+        <h2>7. Cancelación y finalización</h2>
+
+        <p>
+            Sala Arcoíris es una experiencia de duración determinada de tres
+            meses y se contrata mediante un único pago de 444 €.
+        </p>
 
-            <p>
-                Los contenidos, materiales y accesos son personales e intransferibles y no podrán compartirse con terceras personas.
-            </p>
+        <p>
+            La contratación no implica una suscripción mensual ni renovaciones
+            automáticas.
+        </p>
 
-            <p>
-                La titular podrá adoptar medidas razonables para proteger los contenidos frente a accesos no autorizados.
-            </p>
+        <p>
+            La finalización de la experiencia tendrá lugar una vez transcurridos
+            los tres meses contratados, salvo que legalmente corresponda otra
+            cosa.
+        </p>
 
-            <p>
-                El acceso a determinados servicios podrá depender del correcto funcionamiento de plataformas externas utilizadas para prestar el servicio.
-            </p>
+    </section>
 
 
-            <h2>5. Mentorías y comunidad</h2>
+    <section class="legal-section">
+
+        <h2>8. Derecho de desistimiento</h2>
+
+        <p>
+            Cuando la contratación tenga la consideración de contrato a distancia
+            con una persona consumidora, se aplicará el derecho de desistimiento
+            reconocido por la legislación española, salvo que resulte aplicable
+            alguna de las excepciones legalmente previstas.
+        </p>
 
-            <p>
-                Las mentorías grupales y demás actividades incluidas en los programas se desarrollarán en los días, horarios y condiciones comunicados por Aquí Está Dios.
-            </p>
+        <p>
+            Con carácter general, el plazo legal de desistimiento es de
+            <strong>14 días naturales</strong> desde la celebración del contrato
+            de servicios.
+        </p>
 
-            <p>
-                La programación podrá modificarse por motivos organizativos, técnicos o de fuerza mayor, procurando mantener la prestación del servicio contratado.
-            </p>
+        <p>
+            En caso de que la prestación del servicio comience durante dicho
+            plazo, la persona consumidora deberá haber solicitado expresamente
+            el inicio de la prestación cuando corresponda y haber sido informada
+            de las consecuencias previstas legalmente.
+        </p>
 
-            <p>
-                El acceso a la comunidad privada está destinado exclusivamente a las personas que tengan derecho a dicho acceso según el programa contratado.
-            </p>
+        <p>
+            En el caso del suministro de contenido digital que no se proporcione
+            en soporte material, el derecho de desistimiento puede quedar
+            excluido cuando la ejecución haya comenzado con el consentimiento
+            expreso previo de la persona consumidora, esta haya reconocido que
+            pierde su derecho de desistimiento y se hayan cumplido los demás
+            requisitos legalmente aplicables.
+        </p>
 
-            <p>
-                La participación en la comunidad deberá realizarse de forma respetuosa. No se permitirá el uso de la comunidad para realizar actividades ilícitas, compartir contenido ofensivo, acosar a otras personas, realizar publicidad no autorizada o perjudicar el normal funcionamiento del espacio.
-            </p>
+        <p>
+            Cualquier ejercicio del derecho de desistimiento podrá comunicarse
+            a:
+        </p>
 
+        <p>
+            <strong>aquiestadiosbymara@hotmail.com</strong>
+        </p>
 
-            <h2>6. Pagos</h2>
+        <p>
+            Las condiciones y efectos del desistimiento se aplicarán siempre
+            de acuerdo con la normativa vigente en cada momento.
+        </p>
 
-            <p>
-                Los precios aplicables serán los mostrados en el sitio web o en la página de contratación correspondiente en el momento de realizar la compra.
-            </p>
+    </section>
 
-            <p>
-                Los pagos podrán realizarse mediante <strong>Wise</strong>, de acuerdo con las instrucciones indicadas en la página de contratación correspondiente.
-            </p>
 
-            <p>
-                Los pagos realizados mediante plataformas externas estarán sujetos también a las condiciones y políticas de dichas plataformas.
-            </p>
+    <section class="legal-section">
 
-            <p>
-                En el caso de Fase Acércate, la suscripción mensual continuará renovándose hasta que la persona usuaria solicite su cancelación, de acuerdo con las condiciones de la suscripción.
-            </p>
+        <h2>9. Contenidos y propiedad intelectual</h2>
 
+        <p>
+            Todos los contenidos incluidos en Sala Arcoíris, incluyendo vídeos,
+            audios, textos, documentos, ejercicios, materiales formativos,
+            diseños y demás recursos, son propiedad de la titular o se utilizan
+            con autorización suficiente.
+        </p>
 
-            <h2>7. Cancelación de Fase Acércate</h2>
+        <p>
+            La contratación de Sala Arcoíris únicamente concede a la persona
+            usuaria un derecho personal de acceso y utilización de los contenidos
+            durante el periodo contratado.
+        </p>
 
-            <p>
-                La persona suscrita podrá cancelar Fase Acércate en cualquier momento.
-            </p>
+        <p>
+            Queda prohibido copiar, reproducir, distribuir, vender, publicar,
+            compartir, ceder, modificar o explotar comercialmente los contenidos
+            sin autorización expresa de la titular.
+        </p>
 
-            <p>
-                La cancelación deberá realizarse antes de la siguiente fecha de renovación para evitar el siguiente cobro.
-            </p>
+        <p>
+            En particular, no está permitido compartir accesos, distribuir los
+            materiales con terceras personas o poner los contenidos a disposición
+            pública.
+        </p>
 
-            <p>
-                La cancelación no genera automáticamente la devolución del importe correspondiente al periodo ya pagado. La persona conservará el acceso durante el periodo que ya haya abonado.
-            </p>
+    </section>
 
-            <p>
-                Lo anterior se entiende sin perjuicio de los derechos que puedan corresponder legalmente a la persona consumidora, incluido, cuando resulte aplicable, el derecho de desistimiento.
-            </p>
 
+    <section class="legal-section">
 
-            <h2>8. Derecho de desistimiento</h2>
+        <h2>10. Uso responsable</h2>
 
-            <p>
-                Cuando la contratación tenga la consideración de contrato a distancia con una persona consumidora, se aplicará el derecho de desistimiento reconocido por la legislación española, salvo que resulte aplicable alguna de las excepciones legalmente previstas.
-            </p>
+        <p>
+            La persona usuaria se compromete a utilizar los servicios y
+            contenidos de forma responsable y conforme a la legislación vigente.
+        </p>
 
-            <p>
-                Con carácter general, el plazo legal de desistimiento es de 14 días naturales desde la celebración del contrato de servicios.
-            </p>
+        <p>
+            No está permitido utilizar los espacios de Aquí Está Dios para
+            realizar actividades ilícitas, fraudulentas, discriminatorias,
+            abusivas o que puedan perjudicar a otras personas participantes
+            o a la propia comunidad.
+        </p>
 
-            <p>
-                En el caso de servicios cuya ejecución comience durante dicho plazo, la persona consumidora deberá haber solicitado expresamente el inicio de la prestación cuando corresponda y haber sido informada de las consecuencias previstas legalmente.
-            </p>
+        <p>
+            El incumplimiento grave de estas condiciones podrá dar lugar a la
+            suspensión o retirada del acceso cuando resulte necesario para
+            proteger el servicio, la comunidad o los derechos de terceras
+            personas, sin perjuicio de los derechos que correspondan legalmente.
+        </p>
 
-            <p>
-                En el caso de contenido digital que no se suministre en soporte material, el derecho de desistimiento puede quedar excluido cuando la ejecución haya comenzado con el consentimiento expreso previo de la persona consumidora, esta haya reconocido que pierde su derecho de desistimiento y se hayan cumplido los requisitos legales aplicables.
-            </p>
+    </section>
 
-            <p>
-                Cualquier ejercicio del derecho de desistimiento podrá comunicarse a <a href="mailto:aquiestadiosbymara@hotmail.com">aquiestadiosbymara@hotmail.com</a>, indicando la voluntad inequívoca de desistir de la contratación.
-            </p>
 
-            <p>
-                Las condiciones y efectos del desistimiento se aplicarán siempre de acuerdo con la normativa vigente en cada momento.
-            </p>
+    <section class="legal-section">
 
+        <h2>11. Naturaleza del acompañamiento</h2>
 
-            <h2>9. Contenidos y propiedad intelectual</h2>
+        <p>
+            Los contenidos y mentorías de Aquí Está Dios tienen una finalidad
+            formativa, de acompañamiento y desarrollo personal y espiritual.
+        </p>
 
-            <p>
-                Todos los contenidos incluidos en los programas de Aquí Está Dios, incluyendo vídeos, audios, textos, documentos, ejercicios, materiales formativos, diseños y demás recursos, son propiedad de la titular o se utilizan con autorización suficiente.
-            </p>
+        <p>
+            No constituyen servicios médicos, psicológicos, psiquiátricos,
+            jurídicos, financieros ni profesionales de cualquier otra naturaleza
+            que requiera una habilitación específica.
+        </p>
 
-            <p>
-                La contratación de un programa únicamente concede a la persona usuaria un derecho personal de acceso y utilización de los contenidos durante el periodo contratado.
-            </p>
+        <p>
+            La persona usuaria es responsable de valorar sus circunstancias
+            personales y de buscar asesoramiento profesional especializado
+            cuando resulte necesario.
+        </p>
 
-            <p>
-                Queda prohibido copiar, reproducir, distribuir, vender, publicar, compartir, ceder, modificar o explotar comercialmente los contenidos sin autorización expresa de la titular.
-            </p>
+    </section>
 
-            <p>
-                En particular, no está permitido compartir accesos, descargar y distribuir los materiales con terceras personas o poner los contenidos a disposición pública.
-            </p>
 
+    <section class="legal-section">
 
-            <h2>10. Uso responsable</h2>
+        <h2>12. Modificaciones del servicio</h2>
 
-            <p>
-                La persona usuaria se compromete a utilizar los servicios y contenidos de forma responsable y conforme a la legislación vigente.
-            </p>
+        <p>
+            Aquí Está Dios podrá realizar cambios razonables en la organización,
+            estructura, metodología o herramientas utilizadas para prestar los
+            servicios, siempre procurando mantener las características esenciales
+            del servicio contratado.
+        </p>
 
-            <p>
-                No está permitido utilizar los espacios de Aquí Está Dios para realizar actividades ilícitas, fraudulentas, discriminatorias, abusivas o que puedan perjudicar a otras personas participantes o a la propia comunidad.
-            </p>
+        <p>
+            Cuando una modificación afecte de forma sustancial a las condiciones
+            contratadas, se actuará de acuerdo con la normativa aplicable y con
+            los derechos que correspondan a la persona consumidora.
+        </p>
 
-            <p>
-                El incumplimiento grave de estas condiciones podrá dar lugar a la suspensión o retirada del acceso cuando resulte necesario para proteger el servicio, la comunidad o los derechos de terceras personas, sin perjuicio de los derechos que correspondan legalmente.
-            </p>
+    </section>
 
 
-            <h2>11. Naturaleza del acompañamiento</h2>
+    <section class="legal-section">
 
-            <p>
-                Los contenidos y mentorías de Aquí Está Dios tienen una finalidad formativa, de acompañamiento y desarrollo personal y espiritual.
-            </p>
+        <h2>13. Disponibilidad y causas ajenas</h2>
 
-            <p>
-                No constituyen servicios médicos, psicológicos, psiquiátricos, jurídicos, financieros ni profesionales de cualquier otra naturaleza que requiera una habilitación específica.
-            </p>
+        <p>
+            Aquí Está Dios procurará mantener disponibles los servicios
+            contratados, pero no puede garantizar la ausencia absoluta de
+            interrupciones derivadas de problemas técnicos, fallos de terceros,
+            mantenimiento, incidencias de Internet o circunstancias de fuerza
+            mayor.
+        </p>
 
-            <p>
-                La persona usuaria es responsable de valorar sus circunstancias personales y de buscar asesoramiento profesional especializado cuando resulte necesario.
-            </p>
+        <p>
+            Cuando una interrupción afecte de forma relevante a un servicio
+            contratado, la titular procurará adoptar las medidas razonables
+            para restablecerlo.
+        </p>
 
+    </section>
 
-            <h2>12. Modificaciones del servicio</h2>
 
-            <p>
-                Aquí Está Dios podrá realizar cambios razonables en la organización, estructura, metodología o herramientas utilizadas para prestar los servicios, siempre procurando mantener las características esenciales del servicio contratado.
-            </p>
+    <section class="legal-section">
 
-            <p>
-                Cuando una modificación afecte de forma sustancial a las condiciones contratadas, se actuará de acuerdo con la normativa aplicable y con los derechos que correspondan a la persona consumidora.
-            </p>
+        <h2>14. Responsabilidad de la persona usuaria</h2>
 
+        <p>
+            La persona usuaria será responsable de mantener la confidencialidad
+            de sus credenciales de acceso y de comunicar cualquier acceso no
+            autorizado del que tenga conocimiento.
+        </p>
 
-            <h2>13. Disponibilidad y causas ajenas</h2>
+        <p>
+            También será responsable del uso que realice de los contenidos,
+            materiales, comunidad y servicios puestos a su disposición.
+        </p>
 
-            <p>
-                Aquí Está Dios procurará mantener disponibles los servicios contratados, pero no puede garantizar la ausencia absoluta de interrupciones derivadas de problemas técnicos, fallos de terceros, mantenimiento, incidencias de Internet o circunstancias de fuerza mayor.
-            </p>
+    </section>
 
-            <p>
-                Cuando una interrupción afecte de forma relevante a un servicio contratado, Aquí Está Dios procurará adoptar las medidas razonables para restablecerlo.
-            </p>
 
+    <section class="legal-section">
 
-            <h2>14. Responsabilidad de la persona usuaria</h2>
+        <h2>15. Reclamaciones y atención</h2>
 
-            <p>
-                La persona usuaria será responsable de mantener la confidencialidad de sus credenciales de acceso y de comunicar cualquier acceso no autorizado del que tenga conocimiento.
-            </p>
+        <p>
+            Para cualquier consulta, incidencia o reclamación relacionada con
+            los servicios contratados, la persona usuaria podrá ponerse en
+            contacto con Aquí Está Dios mediante:
+        </p>
 
-            <p>
-                También será responsable del uso que realice de los contenidos, materiales, comunidad y servicios puestos a su disposición.
-            </p>
-
-
-            <h2>15. Reclamaciones y atención</h2>
-
-            <p>
-                Para cualquier consulta, incidencia o reclamación relacionada con los servicios contratados, la persona usuaria podrá ponerse en contacto con Aquí Está Dios mediante:
-            </p>
-
-            <p>
+        <p>
+            <strong>
                 <a href="mailto:aquiestadiosbymara@hotmail.com">
                     aquiestadiosbymara@hotmail.com
                 </a>
-            </p>
+            </strong>
+        </p>
 
-            <p>
-                Aquí Está Dios procurará atender las comunicaciones y resolver las incidencias de forma razonable y conforme a la normativa aplicable.
-            </p>
+        <p>
+            Mara Triguero procurará atender las comunicaciones y resolver las
+            incidencias de forma razonable y conforme a la normativa aplicable.
+        </p>
 
-
-            <h2>16. Protección de datos</h2>
-
-            <p>
-                El tratamiento de los datos personales relacionados con la contratación y utilización de los servicios se realizará conforme a la Política de Privacidad de Aquí Está Dios.
-            </p>
+    </section>
 
 
-            <h2>17. Legislación aplicable</h2>
+    <section class="legal-section">
 
-            <p>
-                Las presentes Condiciones del Servicio se regirán por la legislación española, sin perjuicio de las normas imperativas de protección de consumidores que resulten aplicables.
-            </p>
+        <h2>16. Protección de datos</h2>
 
-            <p>
-                En caso de conflicto, serán competentes los órganos jurisdiccionales que correspondan conforme a la normativa aplicable.
-            </p>
+        <p>
+            El tratamiento de los datos personales relacionados con la
+            contratación y utilización de los servicios se realizará conforme
+            a la Política de Privacidad de Aquí Está Dios.
+        </p>
 
-
-            <h2>18. Modificación de las condiciones</h2>
-
-            <p>
-                Aquí Está Dios podrá actualizar estas Condiciones del Servicio cuando sea necesario para adaptarlas a cambios legales, técnicos, organizativos o a modificaciones de los servicios ofrecidos.
-            </p>
-
-            <p>
-                Las condiciones aplicables a una contratación serán las que hayan sido aceptadas por la persona usuaria en el momento de contratar, sin perjuicio de las modificaciones que legalmente puedan resultar aplicables.
-            </p>
+    </section>
 
 
-            <p>
-                <strong>Última actualización: agosto de 2026.</strong>
-            </p>
+    <section class="legal-section">
+
+        <h2>17. Legislación aplicable</h2>
+
+        <p>
+            Las presentes Condiciones del Servicio se regirán por la
+            legislación española, sin perjuicio de las normas imperativas
+            de protección de consumidores que resulten aplicables.
+        </p>
+
+        <p>
+            En caso de conflicto, serán competentes los órganos jurisdiccionales
+            que correspondan conforme a la normativa aplicable.
+        </p>
+
+    </section>
 
 
-        </div>
+    <section class="legal-section">
+
+        <h2>18. Modificación de las condiciones</h2>
+
+        <p>
+            Aquí Está Dios podrá actualizar estas Condiciones del Servicio
+            cuando sea necesario para adaptarlas a cambios legales, técnicos,
+            organizativos o a modificaciones de los servicios ofrecidos.
+        </p>
+
+        <p>
+            Las condiciones aplicables a una contratación serán las que hayan
+            sido aceptadas por la persona usuaria en el momento de contratar,
+            sin perjuicio de las modificaciones que legalmente puedan resultar
+            aplicables.
+        </p>
+
+    </section>
 
 
-        <div class="legal-back">
+    <footer class="legal-footer">
 
-            <a href="index.html">
-                Volver a Aquí Está Dios
+        <p>
+            © 2026 Aquí Está Dios. Todos los derechos reservados.
+        </p>
+
+        <p>
+            Mara Triguero ·
+            <a href="mailto:aquiestadiosbymara@hotmail.com">
+                aquiestadiosbymara@hotmail.com
             </a>
-
-        </div>
-
-    </main>
-
-
-    <footer class="footer">
-
-        <div class="footer-inner">
-
-            <p>© 2026 Aquí Está Dios</p>
-
-            <span>Todos los derechos reservados.</span>
-
-        </div>
+        </p>
 
     </footer>
 
+</main>
 
 </body>
 
