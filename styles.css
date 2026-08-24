@@ -1709,3 +1709,26 @@ box-shadow:
     margin-top: 180px !important;
     padding-top: 0 !important;
 }
+/* ================================
+   CONTADOR DE TARJETAS
+================================ */
+
+.story-counter,
+.story-counter-back {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #C79A2E;
+    font-weight: 600;
+}
+
+.story-counter {
+    margin-top: 18px;
+}
+
+.story-counter-back {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
