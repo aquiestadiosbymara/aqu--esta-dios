@@ -1384,21 +1384,26 @@ box-shadow:
 ================================ */
 
 #maraFinal {
-    position: relative;
+    position: absolute;
     width: 100%;
-    min-height: 650px;
+    height: 100%;
 
-    display: flex;
+    top: 0;
+    left: 0;
+
+    display: none;
     align-items: center;
     justify-content: center;
 
     background: #ffffff;
 
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 
     overflow: hidden;
-}
 
+    z-index: 5;
+}
 /* ================================
    PALABRAS
 ================================ */
