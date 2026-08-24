@@ -210,39 +210,39 @@ Es hora de dejar de buscar fuera la vida que Dios siempre puso dentro de ti.<br>
 
         <div class="story-grid">
 
-        <div class="story-card">
+       <div class="story-card">
 
-            <div class="story-card-inner" id="storyCard">
+    <div class="story-card-inner" id="storyCard">
 
-                <div class="story-front">
+        <div class="story-front">
 
-                    <h3 id="storyTitle">
-                        Aprendí a sobrevivir, pero no a vivir.
-                    </h3>
+            <h3 id="storyTitle">
+                Aprendí a sobrevivir, pero no a vivir.
+            </h3>
 
-                    <small id="storyHint">
-                        Pulsa para leer →
-                    </small>
+            <small id="storyHint">
+                Pulsa para leer →
+            </small>
 
-                </div>
-
-                <div class="story-back">
-
-                    <p id="storyText">
-                        Durante mucho tiempo cargué con responsabilidades que no me correspondían.
-                        Aprendí a ser fuerte, a seguir adelante y a aparentar que podía con todo.
-                        Pero por dentro estaba perdida.
-
-                        Había aprendido a sobrevivir, pero todavía no sabía cómo vivir en paz.
-                    </p>
-
-                </div>
-
+            <div class="story-counter" id="storyCounter">
+                1 / 6
             </div>
 
         </div>
 
+        <div class="story-back">
+
+            <p id="storyText"></p>
+
+            <small class="story-counter-back" id="storyCounterBack">
+                1 / 6
+            </small>
+
+        </div>
+
     </div>
+
+</div>
 
 </section>
 
@@ -376,70 +376,105 @@ document.querySelectorAll(".faq-question").forEach(question => {
 </script>
         
 <script>
-
 const storyStages = [
 
     {
         title: "Aprendí a sobrevivir, pero no a vivir.",
-        text: `Durante mucho tiempo cargué con responsabilidades que no me correspondían. 
-Aprendí a ser fuerte, a seguir adelante y a aparentar que podía con todo. 
-Pero por dentro estaba perdida.
-Había aprendido a sobrevivir, pero todavía no sabía cómo vivir en paz.`
+        text: `Cargaba con responsabilidades que no me correspondían.
+
+Aparentaba poder con todo.
+
+Por dentro, estaba perdida.
+
+Sabía sobrevivir.
+
+Pero no sabía vivir en paz.`
     },
 
     {
         title: "Busqué fuera lo que me faltaba dentro.",
-        text: `Durante mucho tiempo intenté llenar un vacío que no sabía explicar.
-Buscaba sentirme querida, elegida y suficiente en las personas que tenía alrededor.
+        text: `Buscaba sentirme querida.
 
-Me rodeaba de gente, salía, buscaba aprobación y hacía todo lo posible por sentir que pertenecía a algún sitio. Pero cuanto más buscaba fuera, más perdida me sentía por dentro.
+Buscaba sentirme elegida.
 
-Estaba rodeada de gente y, aun así, me sentía completamente sola.`
+Buscaba sentir que pertenecía.
+
+Intentaba llenar un vacío que nadie podía llenar.
+
+Estaba rodeada de gente
+y aun así me sentía completamente sola.`
     },
 
     {
         title: "Cuando más sola me sentía, Dios me habló.",
-        text: `Había llegado a un punto en el que ya no entendía lo que me estaba pasando. Me alejaba de cosas y personas que antes formaban parte de mi vida, pero tenía miedo de quedarme sola. Lloré muchísimo.
+        text: `Ya no entendía lo que me pasaba.
 
-Y fue precisamente en ese silencio cuando escuché por primera vez aquella voz que no sabía explicar.
+Empecé a alejarme de todo mi entorno.
 
-“No estás sola, estoy aquí contigo.”
+Sin darme cuenta, empecé a tener miedo de quedarme sola.
 
-Y por primera vez, sentí paz.`
+Porque estaba sola.
+
+Lloré muchísimo.
+
+Y en medio de ese silencio escuché:
+
+“No estás sola. Estoy contigo.”`
     },
 
     {
         title: "Pensé que estaba loca.",
-        text: `Empecé a escuchar una voz que no sabía explicar. Al principio me daba paz, pero después llegó el miedo.
+        text: `Empecé a escuchar esa voz.
 
-Pensé que estaba loca. Quise buscar respuestas fuera, incluso llegué a pensar que necesitaba ayuda profesional.
+Al principio me daba paz.
 
-Pero cada vez que esa voz hablaba, volvía la paz. Hasta que entendí que no tenía que tenerle miedo.
+Después llegó el miedo.
 
-Era Dios. Y aquello que tanto miedo me daba estaba despertando en mí algo que todavía no entendía.`
+Busqué fuera respuestas.
+
+Pero aquella voz siempre me llevaba a la paz.
+
+Era Dios.`
     },
+
     {
         title: "Y entonces, mi vida entera se derrumbó.",
-        text: `Amistades. Entorno. Familia. Heridas. Caretas. Ego...
+        text: `Amistades.
+
+Entorno.
+
+Familia.
+
+Heridas.
+
+Caretas.
+
+Ego.
 
 Todo aquello detrás de lo que llevaba años escondiéndome empezó a caer.
 
-Me quedé completamente sola. Pero esta vez no estaba sola: estaba con Dios.
-
-Y fue ahí, en ese silencio, cuando dejé de intentar ser quien el mundo quería que fuera.
-
-Ahí renació Mara.`
+Y ahí renació Mara.`
     },
 
     {
         title: "Dios me llevó al desierto.",
-        text: `Después de que todo se derrumbara, empezó mi verdadero proceso con Dios.
+        text: `Me quedé sin aquello en lo que antes me apoyaba.
 
-Me llevó al desierto. A un lugar donde ya no podía apoyarme en nada de lo que antes conocía.
+Llegaron las pruebas.
 
-Allí llegaron las pruebas, las pérdidas, las dudas y los momentos en los que tuve que elegir entre volver a lo de antes o confiar en Él.
+Las pérdidas.
 
-Aprendí a conocer Su voz. Y, con el tiempo, a obedecerla.`
+Las dudas.
+
+Y tuve que elegir:
+
+volver a lo de antes
+
+o confiar en Él.
+
+Aprendí a conocer Su voz.
+
+Y a obedecerla.`
     }
 
 ];
@@ -451,19 +486,23 @@ const storyCard = document.getElementById("storyCard");
 const storyTitle = document.getElementById("storyTitle");
 const storyText = document.getElementById("storyText");
 const storyHint = document.getElementById("storyHint");
-
+const storyCounter = document.getElementById("storyCounter");
+const storyCounterBack = document.getElementById("storyCounterBack");
+    
 storyCard.addEventListener("click", function () {
 
     if (showingBack === false) {
 
-        storyText.textContent = storyStages[currentStage].text;
+       storyText.textContent = storyStages[currentStage].text;
 
-        storyCard.parentElement.classList.add("flipped");
+storyCard.parentElement.classList.add("flipped");
 
-        storyHint.textContent = "Pulsa para continuar →";
+storyHint.textContent = "Pulsa para continuar →";
 
-        showingBack = true;
+storyCounter.textContent = `${currentStage + 1} / 6`;
+storyCounterBack.textContent = `${currentStage + 1} / 6`;
 
+showingBack = true;
         return;
     }
 
@@ -509,14 +548,16 @@ iniciarMaraFinal();
      * Tarjetas 1 → 5:
      * pasamos normalmente a la siguiente.
      */
-    currentStage++;
+   currentStage++;
 
-    storyTitle.textContent = storyStages[currentStage].title;
+storyTitle.textContent = storyStages[currentStage].title;
 
-    storyHint.textContent = "Pulsa para leer →";
+storyHint.textContent = "Pulsa para leer →";
 
-    showingBack = false;
+storyCounter.textContent = `${currentStage + 1} / 6`;
+storyCounterBack.textContent = `${currentStage + 1} / 6`;
 
+showingBack = false;
 });
 function iniciarMaraFinal() {
 
