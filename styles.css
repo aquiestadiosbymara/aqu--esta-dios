@@ -1026,182 +1026,120 @@ color:#666;
 
 .footer {
     width: 100%;
-    background: #f8f7f3;
-
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-
-    padding: 70px 30px 45px;
-
+    background: #faf9f6;
+    padding: 70px 30px 42px;
     box-sizing: border-box;
 }
 
-
 .footer-inner {
-    width: 100%;
     max-width: 1100px;
-
     margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     text-align: center;
 }
 
 
-/* =========================================
-   MARCA
-========================================= */
+/* MARCA */
 
 .footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
-
 
 .footer-logo {
     font-family: "Outfit", sans-serif;
-
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
-
     letter-spacing: 4px;
-
-    color: #222;
+    color: #202020;
 }
 
-
 .footer-subtitle {
-    margin-top: 3px;
-
+    margin-top: 2px;
     font-family: "Caveat", cursive;
-
     font-size: 22px;
-
     color: #c99522;
 }
 
 
-/* =========================================
-   REDES SOCIALES
-========================================= */
+/* REDES */
 
 .footer-socials {
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    gap: 24px;
-
+    align-items: center;
+    gap: 27px;
     margin-bottom: 38px;
 }
 
-
 .footer-socials a {
-    width: 34px;
-    height: 34px;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
+    color: #555;
     text-decoration: none;
 
-    color: #555;
-
     transition:
-        color 0.25s ease,
-        transform 0.25s ease;
+        transform 0.25s ease,
+        color 0.25s ease;
 }
 
-
-.footer-socials a span {
-    font-family: Arial, sans-serif;
-
+.footer-socials i {
     font-size: 21px;
-
-    line-height: 1;
 }
-
 
 .footer-socials a:hover {
     color: #c99522;
-
     transform: translateY(-2px);
 }
 
 
-/* =========================================
-   ENLACES LEGALES
-========================================= */
+/* ENLACES */
 
 .footer-links {
-    width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-wrap: wrap;
 
     gap: 12px 30px;
 
-    margin-bottom: 38px;
+    margin-bottom: 34px;
 }
-
 
 .footer-links a {
     font-family: "Inter", sans-serif;
-
     font-size: 13px;
     font-weight: 400;
 
     color: #777;
-
     text-decoration: none;
 
     transition: color 0.25s ease;
 }
-
 
 .footer-links a:hover {
     color: #c99522;
 }
 
 
-/* =========================================
-   PARTE INFERIOR
-========================================= */
+/* COPYRIGHT */
 
 .footer-bottom {
-    width: 100%;
-
-    padding-top: 28px;
-
+    padding-top: 27px;
     border-top: 1px solid rgba(0, 0, 0, 0.07);
 }
-
 
 .footer-bottom p {
     margin: 0;
 
     font-family: "Inter", sans-serif;
-
     font-size: 12px;
 
     color: #999;
-
-    letter-spacing: 0.2px;
 }
 
 
-/* =========================================
-   MÓVIL
-========================================= */
+/* MÓVIL */
 
 @media (max-width: 600px) {
 
@@ -1209,45 +1147,20 @@ color:#666;
         padding: 60px 20px 35px;
     }
 
-
     .footer-logo {
-        font-size: 19px;
-
+        font-size: 21px;
         letter-spacing: 3px;
     }
 
-
-    .footer-subtitle {
-        font-size: 20px;
-    }
-
-
     .footer-socials {
-        margin-bottom: 32px;
+        gap: 24px;
+        margin-bottom: 35px;
     }
-
 
     .footer-links {
         flex-direction: column;
-
         gap: 16px;
-
-        margin-bottom: 32px;
-    }
-
-
-    .footer-links a {
-        font-size: 13px;
-    }
-
-
-    .footer-bottom {
-        padding-top: 24px;
-    }
-
-
-    .footer-bottom p {
-        line-height: 1.6;
+        margin-bottom: 30px;
     }
 
 }
