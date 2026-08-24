@@ -1020,53 +1020,235 @@ line-height:1.8;
 color:#666;
 
 }
-/* ===== FOOTER ===== */
+/* =========================================
+   FOOTER
+========================================= */
 
-.footer{
+.footer {
+    width: 100%;
+    background: #f8f7f3;
 
-    margin-top:180px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
 
-    background:#faf8f4;
+    padding: 70px 30px 45px;
 
-    border-top:1px solid rgba(201,165,92,.15);
-
-    padding:55px 20px;
-
+    box-sizing: border-box;
 }
 
-.footer-inner{
 
-    max-width:1200px;
+.footer-inner {
+    width: 100%;
+    max-width: 1100px;
 
-    margin:auto;
+    margin: 0 auto;
 
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    text-align: center;
 }
 
-.footer p{
 
-    font-family:'Outfit',sans-serif;
+/* =========================================
+   MARCA
+========================================= */
 
-    font-size:18px;
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    font-weight:600;
-
-    color:#222;
-
-    margin-bottom:8px;
-
+    margin-bottom: 28px;
 }
 
-.footer span{
 
-    font-family:'Outfit',sans-serif;
+.footer-logo {
+    font-family: "Outfit", sans-serif;
 
-    font-size:15px;
+    font-size: 22px;
+    font-weight: 600;
 
-    color:#8d8d8d;
+    letter-spacing: 4px;
 
-    letter-spacing:.3px;
+    color: #222;
+}
+
+
+.footer-subtitle {
+    margin-top: 3px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 22px;
+
+    color: #c99522;
+}
+
+
+/* =========================================
+   REDES SOCIALES
+========================================= */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+
+    margin-bottom: 38px;
+}
+
+
+.footer-socials a {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: #555;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.footer-socials a span {
+    font-family: Arial, sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1;
+}
+
+
+.footer-socials a:hover {
+    color: #c99522;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ENLACES LEGALES
+========================================= */
+
+.footer-links {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px 30px;
+
+    margin-bottom: 38px;
+}
+
+
+.footer-links a {
+    font-family: "Inter", sans-serif;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    color: #777;
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+
+.footer-links a:hover {
+    color: #c99522;
+}
+
+
+/* =========================================
+   PARTE INFERIOR
+========================================= */
+
+.footer-bottom {
+    width: 100%;
+
+    padding-top: 28px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+
+    color: #999;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================================
+   MÓVIL
+========================================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 60px 20px 35px;
+    }
+
+
+    .footer-logo {
+        font-size: 19px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .footer-subtitle {
+        font-size: 20px;
+    }
+
+
+    .footer-socials {
+        margin-bottom: 32px;
+    }
+
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 16px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+
+    .footer-bottom {
+        padding-top: 24px;
+    }
+
+
+    .footer-bottom p {
+        line-height: 1.6;
+    }
 
 }
 /* ===========================
