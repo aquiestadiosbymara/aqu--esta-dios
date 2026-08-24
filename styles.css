@@ -1697,3 +1697,15 @@ box-shadow:
     }
 
 }
+/* =========================================
+   ESPACIO ENTRE MI HISTORIA Y FAQ
+========================================= */
+
+.story {
+    margin-bottom: 0 !important;
+}
+
+.faq-section {
+    margin-top: 180px !important;
+    padding-top: 0 !important;
+}
