@@ -13,106 +13,171 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
-
     <style>
 
-        .legal-page {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 140px 30px 100px;
+        * {
+            box-sizing: border-box;
         }
 
-        .legal-header {
+        body {
+            margin: 0;
+            background: #f8f7f3;
+            color: #222;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+        }
+
+        header {
+            padding: 35px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f7f3;
+        }
+
+        .logo-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 4px;
+        }
+
+        .logo-subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            font-style: italic;
+            color: #c99822;
+            margin-top: -2px;
+            margin-left: 48px;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #222;
+            border: 1px solid #222;
+            border-radius: 30px;
+            padding: 10px 22px;
+            font-size: 14px;
+            transition: 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #222;
+            color: #fff;
+        }
+
+        .privacy-container {
+            max-width: 900px;
+            margin: 80px auto 120px;
+            padding: 0 30px;
+        }
+
+        .privacy-header {
             text-align: center;
             margin-bottom: 70px;
         }
 
-        .legal-header span {
-            display: block;
-            font-family: "Inter", sans-serif;
+        .privacy-header span {
             font-size: 12px;
             letter-spacing: 3px;
             text-transform: uppercase;
-            margin-bottom: 20px;
-            opacity: 0.65;
+            color: #c99822;
+            font-weight: 600;
         }
 
-        .legal-header h1 {
-            font-family: "Outfit", sans-serif;
-            font-size: clamp(38px, 6vw, 64px);
-            line-height: 1.05;
-            margin: 0;
+        .privacy-header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(42px, 6vw, 68px);
             font-weight: 500;
+            margin: 15px 0 10px;
+            line-height: 1.1;
         }
 
-        .legal-header p {
-            font-family: "Inter", sans-serif;
-            margin-top: 20px;
+        .privacy-header p {
+            color: #777;
             font-size: 14px;
-            opacity: 0.6;
         }
 
-        .legal-content {
-            font-family: "Inter", sans-serif;
-            font-size: 15px;
-            line-height: 1.8;
-        }
-
-        .legal-content h2 {
-            font-family: "Outfit", sans-serif;
-            font-size: 23px;
+        .privacy-content h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
             margin-top: 55px;
-            margin-bottom: 18px;
-            font-weight: 600;
+            margin-bottom: 15px;
         }
 
-        .legal-content h3 {
-            font-family: "Outfit", sans-serif;
+        .privacy-content h3 {
+            font-family: 'Outfit', sans-serif;
             font-size: 17px;
+            font-weight: 600;
             margin-top: 30px;
-            margin-bottom: 10px;
-            font-weight: 600;
         }
 
-        .legal-content p {
-            margin-bottom: 20px;
+        .privacy-content p {
+            font-size: 15px;
+            color: #444;
+            margin: 0 0 18px;
         }
 
-        .legal-content ul {
-            margin: 10px 0 25px;
+        .privacy-content ul {
             padding-left: 25px;
+            color: #444;
         }
 
-        .legal-content li {
+        .privacy-content li {
             margin-bottom: 8px;
+            font-size: 15px;
         }
 
-        .legal-content strong {
-            font-weight: 600;
+        .privacy-content strong {
+            color: #222;
         }
 
-        .legal-email {
-            font-weight: 600;
+        footer {
+            border-top: 1px solid #e4e1d9;
+            padding: 35px 20px;
+            text-align: center;
+            color: #888;
+            font-size: 13px;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 600px) {
 
-            .legal-page {
-                padding: 110px 22px 70px;
+            header {
+                padding: 25px 20px;
             }
 
-            .legal-header {
-                margin-bottom: 50px;
+            .logo-title {
+                font-size: 15px;
+                letter-spacing: 3px;
             }
 
-            .legal-content {
+            .logo-subtitle {
+                font-size: 16px;
+                margin-left: 38px;
+            }
+
+            .back-link {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+
+            .privacy-container {
+                margin-top: 50px;
+                padding: 0 22px;
+            }
+
+            .privacy-header {
+                margin-bottom: 45px;
+            }
+
+            .privacy-content h2 {
+                font-size: 20px;
+            }
+
+            .privacy-content p,
+            .privacy-content li {
                 font-size: 14px;
-            }
-
-            .legal-content h2 {
-                font-size: 21px;
-                margin-top: 45px;
             }
 
         }
@@ -123,352 +188,339 @@
 
 <body>
 
-    <header>
+<header>
 
-        <div class="logo">
+    <div class="logo">
 
-            <div class="logo-title">
-                AQUÍ ESTÁ DIOS
-            </div>
-
-            <div class="logo-subtitle">
-                by Mara Triguero
-            </div>
-
+        <div class="logo-title">
+            AQUÍ ESTÁ DIOS
         </div>
 
-        <nav>
-
-            <a href="index.html" class="btn-nav">
-                Volver
-            </a>
-
-        </nav>
-
-    </header>
-
-
-    <main class="legal-page">
-
-        <div class="legal-header">
-
-            <span>Aquí Está Dios</span>
-
-            <h1>Política de Privacidad</h1>
-
-            <p>Última actualización: agosto de 2026</p>
-
+        <div class="logo-subtitle">
+            by Mara Triguero
         </div>
 
+    </div>
 
-        <div class="legal-content">
+    <a href="index.html" class="back-link">
+        Volver
+    </a>
 
+</header>
 
-            <h2>1. Responsable del tratamiento</h2>
 
-            <p>
-                El responsable del tratamiento de los datos personales que puedan ser tratados a través de este sitio web es:
-            </p>
+<main class="privacy-container">
 
-            <p>
-                <strong>Mara Triguero</strong><br>
-                Domicilio: Calle Naufragio 33<br>
-                Correo electrónico: aquiestadiosbymara@hotmail.com
-            </p>
+    <div class="privacy-header">
 
-            <p>
-                En adelante, la responsable podrá ser denominada como <strong>Aquí Está Dios</strong>.
-            </p>
+        <span>Información legal</span>
 
+        <h1>Política de Privacidad</h1>
 
-            <h2>2. Qué datos personales pueden tratarse</h2>
+        <p>Última actualización: agosto de 2026</p>
 
-            <p>
-                Aquí Está Dios no dispone actualmente de formularios de registro, suscripción a newsletters ni otros formularios propios de recogida de datos personales dentro del sitio web.
-            </p>
+    </div>
 
-            <p>
-                Los datos personales pueden ser tratados cuando la propia persona usuaria decide ponerse en contacto con Aquí Está Dios o contratar alguno de sus servicios mediante herramientas o plataformas externas enlazadas desde el sitio web.
-            </p>
 
-            <p>
-                Dependiendo de la interacción realizada, pueden tratarse datos como:
-            </p>
+    <div class="privacy-content">
 
-            <ul>
-                <li>Datos identificativos y de contacto facilitados voluntariamente por la persona usuaria.</li>
-                <li>Número de teléfono y nombre o información asociada a un perfil cuando la persona usuaria contacta mediante WhatsApp.</li>
-                <li>Datos necesarios para gestionar una contratación o un pago realizado mediante PayPal o Wise.</li>
-                <li>Información que la persona usuaria facilite voluntariamente durante una comunicación con Aquí Está Dios.</li>
-            </ul>
+        <h2>1. Responsable del tratamiento</h2>
 
-            <p>
-                Aquí Está Dios solicita únicamente aquellos datos que resulten necesarios para la finalidad correspondiente.
-            </p>
+        <p>
+            El responsable del tratamiento de los datos personales que puedan ser tratados a través de este sitio web es:
+        </p>
 
+        <p>
+            <strong>Mara Triguero</strong><br>
+            Domicilio: Calle Naufragio 33<br>
+            Correo electrónico: aquiestadiosbymara@hotmail.com
+        </p>
 
-            <h2>3. Finalidades del tratamiento</h2>
+        <p>
+            En adelante, la responsable podrá ser denominada como <strong>Aquí Está Dios</strong>.
+        </p>
 
-            <p>
-                Los datos personales podrán ser tratados para las siguientes finalidades:
-            </p>
 
-            <h3>a) Atender consultas y comunicaciones</h3>
+        <h2>2. Qué datos personales pueden tratarse</h2>
 
-            <p>
-                Cuando una persona contacta voluntariamente con Aquí Está Dios, sus datos podrán utilizarse para responder a sus consultas, proporcionar información sobre los programas y servicios y mantener la comunicación solicitada.
-            </p>
+        <p>
+            Aquí Está Dios no dispone actualmente de formularios de registro, suscripción a newsletters ni otros formularios propios de recogida de datos personales dentro del sitio web.
+        </p>
 
-            <h3>b) Gestionar la contratación de servicios</h3>
+        <p>
+            Los datos personales pueden ser tratados cuando la propia persona usuaria decide ponerse en contacto con Aquí Está Dios o contratar alguno de sus servicios mediante herramientas o plataformas externas enlazadas desde el sitio web.
+        </p>
 
-            <p>
-                Cuando una persona contrata un programa, mentoría u otro servicio de Aquí Está Dios, los datos necesarios podrán utilizarse para gestionar la contratación, proporcionar el servicio contratado, mantener la comunicación relacionada con el mismo y atender las obligaciones derivadas de la relación contractual.
-            </p>
+        <p>
+            Dependiendo de la interacción realizada, pueden tratarse datos como:
+        </p>
 
-            <h3>c) Gestionar pagos</h3>
+        <ul>
+            <li>Datos identificativos y de contacto facilitados voluntariamente por la persona usuaria.</li>
+            <li>Número de teléfono y nombre o información asociada a un perfil cuando la persona usuaria contacta mediante WhatsApp.</li>
+            <li>Datos necesarios para gestionar una contratación o un pago realizado mediante Wise.</li>
+            <li>Información que la persona usuaria facilite voluntariamente durante una comunicación con Aquí Está Dios.</li>
+        </ul>
 
-            <p>
-                Los pagos realizados mediante plataformas externas como PayPal o Wise son procesados directamente por dichas plataformas.
-            </p>
+        <p>
+            Aquí Está Dios solicita únicamente aquellos datos que resulten necesarios para la finalidad correspondiente.
+        </p>
 
-            <p>
-                Aquí Está Dios podrá recibir determinados datos asociados a la operación cuando sean necesarios para identificar el pago, gestionar la contratación o cumplir con las obligaciones legales correspondientes.
-            </p>
 
-            <h3>d) Cumplir obligaciones legales</h3>
+        <h2>3. Finalidades del tratamiento</h2>
 
-            <p>
-                Los datos podrán ser tratados cuando sea necesario para cumplir obligaciones legales aplicables a la actividad de Aquí Está Dios, incluidas las obligaciones fiscales, contables o relacionadas con la defensa de posibles reclamaciones.
-            </p>
+        <p>
+            Los datos personales podrán ser tratados para las siguientes finalidades:
+        </p>
 
+        <h3>a) Atender consultas y comunicaciones</h3>
 
-            <h2>4. Base jurídica</h2>
+        <p>
+            Cuando una persona contacta voluntariamente con Aquí Está Dios, sus datos podrán utilizarse para responder a sus consultas, proporcionar información sobre los programas y servicios y mantener la comunicación solicitada.
+        </p>
 
-            <p>
-                Las bases jurídicas aplicables dependerán de la finalidad concreta del tratamiento.
-            </p>
+        <h3>b) Gestionar la contratación de servicios</h3>
 
-            <p>
-                Cuando exista una relación contractual, el tratamiento podrá ser necesario para la ejecución de dicha relación.
-            </p>
+        <p>
+            Cuando una persona contrata un programa, mentoría u otro servicio de Aquí Está Dios, los datos necesarios podrán utilizarse para gestionar la contratación, proporcionar el servicio contratado, mantener la comunicación relacionada con el mismo y atender las obligaciones derivadas de la relación contractual.
+        </p>
 
-            <p>
-                Cuando una persona contacte voluntariamente con Aquí Está Dios para solicitar información, el tratamiento podrá basarse en la adopción de medidas precontractuales a petición de la persona interesada.
-            </p>
+        <h3>c) Gestionar pagos</h3>
 
-            <p>
-                Cuando el tratamiento sea necesario para cumplir una obligación legal, la base jurídica será el cumplimiento de dicha obligación.
-            </p>
+        <p>
+            Los pagos realizados mediante Wise son procesados directamente por dicha plataforma.
+        </p>
 
-            <p>
-                En aquellos tratamientos en los que resulte necesario obtener el consentimiento de la persona interesada, este será solicitado de forma específica y mediante una acción clara.
-            </p>
+        <p>
+            Aquí Está Dios podrá recibir determinados datos asociados a la operación cuando sean necesarios para identificar el pago, gestionar la contratación o cumplir con las obligaciones legales correspondientes.
+        </p>
 
+        <h3>d) Cumplir obligaciones legales</h3>
 
-            <h2>5. WhatsApp y otras plataformas de comunicación</h2>
+        <p>
+            Los datos podrán ser tratados cuando sea necesario para cumplir obligaciones legales aplicables a la actividad de Aquí Está Dios, incluidas las obligaciones fiscales, contables o relacionadas con la defensa de posibles reclamaciones.
+        </p>
 
-            <p>
-                El sitio web puede incluir un botón que permite contactar directamente con Aquí Está Dios mediante WhatsApp.
-            </p>
 
-            <p>
-                Al utilizar dicho botón, la persona usuaria abandona el sitio web y pasa a utilizar un servicio proporcionado por un tercero.
-            </p>
+        <h2>4. Base jurídica</h2>
 
-            <p>
-                La información que la persona usuaria facilite mediante WhatsApp podrá ser tratada por Aquí Está Dios para atender la comunicación iniciada por ella.
-            </p>
+        <p>
+            Las bases jurídicas aplicables dependerán de la finalidad concreta del tratamiento.
+        </p>
 
-            <p>
-                WhatsApp dispone de sus propias condiciones de uso y política de privacidad, que serán aplicables al uso de su plataforma.
-            </p>
+        <p>
+            Cuando exista una relación contractual, el tratamiento podrá ser necesario para la ejecución de dicha relación.
+        </p>
 
-            <p>
-                Aquí Está Dios no controla el tratamiento de datos que WhatsApp realice en sus propios sistemas.
-            </p>
+        <p>
+            Cuando una persona contacte voluntariamente con Aquí Está Dios para solicitar información, el tratamiento podrá basarse en la adopción de medidas precontractuales a petición de la persona interesada.
+        </p>
 
+        <p>
+            Cuando el tratamiento sea necesario para cumplir una obligación legal, la base jurídica será el cumplimiento de dicha obligación.
+        </p>
 
-            <h2>6. PayPal y Wise</h2>
+        <p>
+            En aquellos tratamientos en los que resulte necesario obtener el consentimiento de la persona interesada, este será solicitado de forma específica y mediante una acción clara.
+        </p>
 
-            <p>
-                El sitio web puede proporcionar enlaces o botones para realizar pagos mediante PayPal o Wise.
-            </p>
 
-            <p>
-                Estas plataformas actúan como proveedores externos de servicios de pago y pueden tratar datos personales necesarios para procesar las operaciones de acuerdo con sus propias políticas de privacidad y condiciones de uso.
-            </p>
+        <h2>5. WhatsApp y otras plataformas de comunicación</h2>
 
-            <p>
-                Aquí Está Dios no solicita ni almacena datos completos de tarjetas bancarias mediante su propio sitio web cuando el pago se realiza directamente a través de estas plataformas.
-            </p>
+        <p>
+            El sitio web puede incluir un botón que permite contactar directamente con Aquí Está Dios mediante WhatsApp.
+        </p>
 
-            <p>
-                Los datos que Aquí Está Dios pueda recibir en relación con una operación de pago serán tratados únicamente para las finalidades relacionadas con la gestión de la contratación, prestación del servicio, atención al cliente y cumplimiento de las obligaciones legales correspondientes.
-            </p>
+        <p>
+            Al utilizar dicho botón, la persona usuaria abandona el sitio web y pasa a utilizar un servicio proporcionado por un tercero.
+        </p>
 
+        <p>
+            La información que la persona usuaria facilite mediante WhatsApp podrá ser tratada por Aquí Está Dios para atender la comunicación iniciada por ella.
+        </p>
 
-            <h2>7. YouTube y contenidos de terceros</h2>
+        <p>
+            WhatsApp dispone de sus propias condiciones de uso y política de privacidad, que serán aplicables al uso de su plataforma.
+        </p>
 
-            <p>
-                El sitio web puede incorporar vídeos alojados en YouTube.
-            </p>
+        <p>
+            Aquí Está Dios no controla el tratamiento de datos que WhatsApp realice en sus propios sistemas.
+        </p>
 
-            <p>
-                YouTube es un servicio proporcionado por un tercero y puede realizar sus propios tratamientos de datos, incluidos aquellos relacionados con cookies y tecnologías similares, de acuerdo con sus propias políticas.
-            </p>
 
-            <p>
-                Aquí Está Dios no controla los tratamientos realizados por YouTube cuando una persona interactúa con sus servicios.
-            </p>
+        <h2>6. Wise</h2>
 
+        <p>
+            El sitio web puede proporcionar enlaces o botones para realizar pagos mediante Wise.
+        </p>
 
-            <h2>8. Conservación de los datos</h2>
+        <p>
+            Wise actúa como proveedor externo de servicios de pago y puede tratar datos personales necesarios para procesar las operaciones de acuerdo con su propia política de privacidad y condiciones de uso.
+        </p>
 
-            <p>
-                Los datos personales se conservarán durante el tiempo necesario para cumplir la finalidad para la que fueron obtenidos.
-            </p>
+        <p>
+            Aquí Está Dios no solicita ni almacena datos completos de tarjetas bancarias mediante su propio sitio web cuando el pago se realiza directamente a través de Wise.
+        </p>
 
-            <p>
-                Cuando exista una relación contractual, los datos podrán conservarse mientras esta permanezca vigente y posteriormente durante los plazos necesarios para cumplir las obligaciones legales aplicables o para la defensa de posibles reclamaciones.
-            </p>
+        <p>
+            Los datos que Aquí Está Dios pueda recibir en relación con una operación de pago serán tratados únicamente para las finalidades relacionadas con la gestión de la contratación, prestación del servicio, atención al cliente y cumplimiento de las obligaciones legales correspondientes.
+        </p>
 
-            <p>
-                Cuando los datos sean tratados para atender una consulta o comunicación, se conservarán durante el tiempo necesario para gestionar dicha comunicación y, cuando corresponda, durante los plazos necesarios para atender responsabilidades legales.
-            </p>
 
+        <h2>7. YouTube y contenidos de terceros</h2>
 
-            <h2>9. Destinatarios de los datos</h2>
+        <p>
+            El sitio web puede incorporar vídeos alojados en YouTube.
+        </p>
 
-            <p>
-                Los datos personales podrán ser tratados por proveedores de servicios necesarios para el funcionamiento de la actividad de Aquí Está Dios, cuando resulte necesario para prestar el servicio correspondiente.
-            </p>
+        <p>
+            YouTube es un servicio proporcionado por un tercero y puede realizar sus propios tratamientos de datos, incluidos aquellos relacionados con cookies y tecnologías similares, de acuerdo con sus propias políticas.
+        </p>
 
-            <p>
-                Entre ellos pueden encontrarse proveedores de:
-            </p>
+        <p>
+            Aquí Está Dios no controla los tratamientos realizados por YouTube cuando una persona interactúa con sus servicios.
+        </p>
 
-            <ul>
-                <li>Servicios de comunicación, como WhatsApp.</li>
-                <li>Servicios de pago, como PayPal y Wise.</li>
-                <li>Servicios tecnológicos y de alojamiento necesarios para el funcionamiento del sitio web.</li>
-                <li>Servicios de alojamiento o reproducción de vídeo, como YouTube.</li>
-            </ul>
 
-            <p>
-                Asimismo, los datos podrán comunicarse cuando exista una obligación legal de hacerlo o cuando sea necesario para ejercer o defender derechos y reclamaciones.
-            </p>
+        <h2>8. Conservación de los datos</h2>
 
+        <p>
+            Los datos personales se conservarán durante el tiempo necesario para cumplir la finalidad para la que fueron obtenidos.
+        </p>
 
-            <h2>10. Transferencias internacionales</h2>
+        <p>
+            Cuando exista una relación contractual, los datos podrán conservarse mientras esta permanezca vigente y posteriormente durante los plazos necesarios para cumplir las obligaciones legales aplicables o para la defensa de posibles reclamaciones.
+        </p>
 
-            <p>
-                Algunos de los proveedores externos utilizados por Aquí Está Dios pueden estar establecidos fuera del Espacio Económico Europeo o utilizar infraestructuras situadas en terceros países.
-            </p>
+        <p>
+            Cuando los datos sean tratados para atender una consulta o comunicación, se conservarán durante el tiempo necesario para gestionar dicha comunicación y, cuando corresponda, durante los plazos necesarios para atender responsabilidades legales.
+        </p>
 
-            <p>
-                En estos casos, el tratamiento y las posibles transferencias internacionales se regirán por las condiciones y garantías establecidas por dichos proveedores y por la normativa aplicable en materia de protección de datos.
-            </p>
 
-            <p>
-                Cuando resulte legalmente exigible, se utilizarán los mecanismos previstos por el RGPD para garantizar un nivel adecuado de protección de los datos personales.
-            </p>
+        <h2>9. Destinatarios de los datos</h2>
 
+        <p>
+            Los datos personales podrán ser tratados por proveedores de servicios necesarios para el funcionamiento de la actividad de Aquí Está Dios, cuando resulte necesario para prestar el servicio correspondiente.
+        </p>
 
-            <h2>11. Seguridad</h2>
+        <p>
+            Entre ellos pueden encontrarse proveedores de:
+        </p>
 
-            <p>
-                Aquí Está Dios adopta medidas técnicas y organizativas razonables destinadas a proteger los datos personales frente a pérdida, alteración, acceso no autorizado o tratamiento indebido.
-            </p>
+        <ul>
+            <li>Servicios de comunicación, como WhatsApp.</li>
+            <li>Servicios de pago, como Wise.</li>
+            <li>Servicios tecnológicos y de alojamiento necesarios para el funcionamiento del sitio web.</li>
+            <li>Servicios de alojamiento o reproducción de vídeo, como YouTube.</li>
+        </ul>
 
-            <p>
-                No obstante, ningún sistema conectado a Internet puede garantizar una seguridad absoluta.
-            </p>
+        <p>
+            Asimismo, los datos podrán comunicarse cuando exista una obligación legal de hacerlo o cuando sea necesario para ejercer o defender derechos y reclamaciones.
+        </p>
 
 
-            <h2>12. Derechos de las personas usuarias</h2>
+        <h2>10. Transferencias internacionales</h2>
 
-            <p>
-                La persona interesada puede ejercer, cuando proceda, los siguientes derechos:
-            </p>
+        <p>
+            Algunos de los proveedores externos utilizados por Aquí Está Dios pueden estar establecidos fuera del Espacio Económico Europeo o utilizar infraestructuras situadas en terceros países.
+        </p>
 
-            <ul>
-                <li>Acceso a sus datos personales.</li>
-                <li>Rectificación de los datos inexactos.</li>
-                <li>Supresión de sus datos.</li>
-                <li>Limitación del tratamiento.</li>
-                <li>Oposición al tratamiento.</li>
-                <li>Portabilidad de los datos cuando resulte aplicable.</li>
-                <li>Retirar el consentimiento cuando el tratamiento se base en este.</li>
-            </ul>
+        <p>
+            En estos casos, el tratamiento y las posibles transferencias internacionales se regirán por las condiciones y garantías establecidas por dichos proveedores y por la normativa aplicable en materia de protección de datos.
+        </p>
 
-            <p>
-                Para ejercer sus derechos, puede enviar una solicitud a:
-            </p>
+        <p>
+            Cuando resulte legalmente exigible, se utilizarán los mecanismos previstos por el RGPD para garantizar un nivel adecuado de protección de los datos personales.
+        </p>
 
-            <p class="legal-email">
-                Diamo2025@gmail.com
-            </p>
 
-            <p>
-                La solicitud deberá indicar, en la medida necesaria, el derecho que desea ejercer y aportar información suficiente para poder identificar la solicitud.
-            </p>
+        <h2>11. Seguridad</h2>
 
+        <p>
+            Aquí Está Dios adopta medidas técnicas y organizativas razonables destinadas a proteger los datos personales frente a pérdida, alteración, acceso no autorizado o tratamiento indebido.
+        </p>
 
-            <h2>13. Derecho a presentar una reclamación</h2>
+        <p>
+            No obstante, ningún sistema conectado a Internet puede garantizar una seguridad absoluta.
+        </p>
 
-            <p>
-                Si la persona interesada considera que el tratamiento de sus datos personales no se ajusta a la normativa aplicable, puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD).
-            </p>
 
+        <h2>12. Derechos de las personas usuarias</h2>
 
-            <h2>14. Privacidad de menores</h2>
+        <p>
+            La persona interesada puede ejercer, cuando proceda, los siguientes derechos:
+        </p>
 
-            <p>
-                Los servicios ofrecidos por Aquí Está Dios no están dirigidos específicamente a menores de edad.
-            </p>
+        <ul>
+            <li>Acceso a sus datos personales.</li>
+            <li>Rectificación de los datos inexactos.</li>
+            <li>Supresión de sus datos.</li>
+            <li>Limitación del tratamiento.</li>
+            <li>Oposición al tratamiento.</li>
+            <li>Portabilidad de los datos cuando resulte aplicable.</li>
+            <li>Retirar el consentimiento cuando el tratamiento se base en este.</li>
+        </ul>
 
-            <p>
-                Aquí Está Dios no solicita deliberadamente datos personales de menores a través de formularios propios del sitio web.
-            </p>
+        <p>
+            Para ejercer sus derechos, puede enviar una solicitud a:
+        </p>
 
-            <p>
-                Si una persona considera que un menor ha facilitado datos personales a Aquí Está Dios sin la debida autorización, puede ponerse en contacto a través de Diamo2025@gmail.com.
-            </p>
+        <p>
+            <strong>aquiestadiosbymara@hotmail.com</strong>
+        </p>
 
+        <p>
+            La solicitud deberá indicar, en la medida necesaria, el derecho que desea ejercer y aportar información suficiente para poder identificar la solicitud.
+        </p>
 
-            <h2>15. Modificaciones de la Política de Privacidad</h2>
 
-            <p>
-                Aquí Está Dios podrá modificar esta Política de Privacidad cuando resulte necesario para adaptarla a cambios legislativos, técnicos, organizativos o a modificaciones en los servicios ofrecidos.
-            </p>
+        <h2>13. Derecho a presentar una reclamación</h2>
 
-            <p>
-                La versión publicada en cada momento será la que resulte aplicable mientras permanezca disponible en el sitio web.
-            </p>
+        <p>
+            Si la persona interesada considera que el tratamiento de sus datos personales no se ajusta a la normativa aplicable, puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD).
+        </p>
 
-            <p>
-                <strong>Última actualización: agosto de 2026.</strong>
-            </p>
 
+        <h2>14. Privacidad de menores</h2>
 
-        </div>
+        <p>
+            Los servicios ofrecidos por Aquí Está Dios no están dirigidos específicamente a menores de edad.
+        </p>
 
-    </main>
+        <p>
+            Aquí Está Dios no solicita deliberadamente datos personales de menores a través de formularios propios del sitio web.
+        </p>
 
+        <p>
+            Si una persona considera que un menor ha facilitado datos personales a Aquí Está Dios sin la debida autorización, puede ponerse en contacto a través de <strong>aquiestadiosbymara@hotmail.com</strong>.
+        </p>
 
-    <footer class="footer">
 
-        <div class="footer-inner">
+        <h2>15. Modificaciones de la Política de Privacidad</h2>
 
-            <p>© 2026 Aquí Está Dios</p>
+        <p>
+            Aquí Está Dios podrá modificar esta Política de Privacidad cuando resulte necesario para adaptarla a cambios legislativos, técnicos, organizativos o a modificaciones en los servicios ofrecidos.
+        </p>
 
-            <span>Todos los derechos reservados.</span>
+        <p>
+            La versión publicada en cada momento será la que resulte aplicable mientras permanezca disponible en el sitio web.
+        </p>
 
-        </div>
+        <p>
+            <strong>Última actualización: agosto de 2026.</strong>
+        </p>
 
-    </footer>
+    </div>
+
+</main>
+
+
+<footer>
+
+    © 2026 Aquí Está Dios · Todos los derechos reservados.
+
+</footer>
 
 
 </body>
-
 </html>
