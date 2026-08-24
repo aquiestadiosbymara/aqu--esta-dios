@@ -868,11 +868,12 @@ filter:grayscale(.2);
 .faq-section{
 
 max-width:1100px;
-margin:180px auto;
-padding:0 8%;
-padding-top: 180px;
-}
 
+margin:120px auto;
+
+padding:0 8%;
+
+}
 .faq-header{
 
 text-align:center;
@@ -1394,13 +1395,8 @@ box-shadow:
     background: #ffffff;
 
     margin: 0 auto;
-padding-bottom: 180px;
+
     overflow: hidden;
-}
-#maraFinal::after {
-    content: "";
-    display: block;
-    height: 180px;
 }
 
 /* ================================
