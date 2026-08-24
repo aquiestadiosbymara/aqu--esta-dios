@@ -378,105 +378,79 @@ document.querySelectorAll(".faq-question").forEach(question => {
 <script>
 const storyStages = [
 
-    {
-        title: "Aprendí a sobrevivir, pero no a vivir.",
-        text: `Cargaba con responsabilidades que no me correspondían.
-
-Aparentaba poder con todo.
-
-Por dentro, estaba perdida.
-
-Sabía sobrevivir.
-
-Pero no sabía vivir en paz.`
-    },
-
-    {
-        title: "Busqué fuera lo que me faltaba dentro.",
-        text: `Buscaba sentirme querida.
-
-Buscaba sentirme elegida.
-
-Buscaba sentir que pertenecía.
-
-Intentaba llenar un vacío que nadie podía llenar.
-
-Estaba rodeada de gente
-y aun así me sentía completamente sola.`
-    },
+   {
+    title: "Aprendí a sobrevivir, pero no a vivir.",
+    text: `
+        <span>Cargaba con responsabilidades que no me correspondían.</span>
+        <span>Aparentaba poder con todo.</span>
+        <span>Por dentro, estaba perdida.</span>
+        <span>Sabía sobrevivir.</span>
+        <strong>Pero no sabía vivir en paz.</strong>
+    `
+},
+   {
+    title: "Busqué fuera lo que me faltaba dentro.",
+    text: `
+        <span>Buscaba sentirme querida.</span>
+        <span>Buscaba sentirme elegida.</span>
+        <span>Buscaba sentir que pertenecía.</span>
+        <span>Intentaba llenar un vacío.</span>
+        <strong>Estaba rodeada de gente y aun así me sentía completamente sola.</strong>
+    `
+},
 
     {
-        title: "Cuando más sola me sentía, Dios me habló.",
-        text: `Ya no entendía lo que me pasaba.
+    title: "Cuando más sola me sentía, Dios me habló.",
+    text: `
+        <span>Ya no entendía lo que me pasaba.</span>
+        <span>Empecé a alejarme de todo mi entorno.</span>
+        <span>Sin darme cuenta, empecé a tener miedo de quedarme sola.</span>
+        <span>Porque estaba sola.</span>
+        <span>Lloré muchísimo.</span>
+        <strong>Y en medio de ese silencio escuché:</strong>
+        <strong>“No estás sola. Estoy contigo.”</strong>
+    `
+},
 
-Empecé a alejarme de todo mi entorno.
+   {
+    title: "Pensé que estaba loca.",
+    text: `
+        <span>Empecé a escuchar esa voz.</span>
+        <span>Al principio me daba paz.</span>
+        <span>Después llegó el miedo.</span>
+        <span>Busqué fuera respuestas.</span>
+        <span>Pero aquella voz siempre me llevaba a la paz.</span>
+        <strong>Era Dios.</strong>
+    `
+},
 
-Sin darme cuenta, empecé a tener miedo de quedarme sola.
+   {
+    title: "Y entonces, mi vida entera se derrumbó.",
+    text: `
+        <span>Amistades.</span>
+        <span>Entorno.</span>
+        <span>Familia.</span>
+        <span>Heridas.</span>
+        <span>Caretas.</span>
+        <span>Ego.</span>
+        <span>Todo empezó a caer.</span>
+        <strong>Y ahí renació Mara.</strong>
+    `
+},
 
-Porque estaba sola.
-
-Lloré muchísimo.
-
-Y en medio de ese silencio escuché:
-
-“No estás sola. Estoy contigo.”`
-    },
-
-    {
-        title: "Pensé que estaba loca.",
-        text: `Empecé a escuchar esa voz.
-
-Al principio me daba paz.
-
-Después llegó el miedo.
-
-Busqué fuera respuestas.
-
-Pero aquella voz siempre me llevaba a la paz.
-
-Era Dios.`
-    },
-
-    {
-        title: "Y entonces, mi vida entera se derrumbó.",
-        text: `Amistades.
-
-Entorno.
-
-Familia.
-
-Heridas.
-
-Caretas.
-
-Ego.
-
-Todo aquello detrás de lo que llevaba años escondiéndome empezó a caer.
-
-Y ahí renació Mara.`
-    },
-
-    {
-        title: "Dios me llevó al desierto.",
-        text: `Me quedé sin aquello en lo que antes me apoyaba.
-
-Llegaron las pruebas.
-
-Las pérdidas.
-
-Las dudas.
-
-Y tuve que elegir:
-
-volver a lo de antes
-
-o confiar en Él.
-
-Aprendí a conocer Su voz.
-
-Y a obedecerla.`
-    }
-
+   {
+    title: "Dios me llevó al desierto.",
+    text: `
+        <span>Me quedé sin aquello en lo que antes me apoyaba.</span>
+        <span>Llegaron las pruebas.</span>
+        <span>Las pérdidas.</span>
+        <span>Las dudas.</span>
+        <span>Y tuve que elegir:</span>
+        <strong>Volver a lo de antes o confiar en Él.</strong>
+        <span>Aprendí a conocer Su voz.</span>
+        <strong>Y a obedecerla.</strong>
+    `
+}
 ];
 
 let currentStage = 0;
@@ -493,7 +467,7 @@ storyCard.addEventListener("click", function () {
 
     if (showingBack === false) {
 
-       storyText.textContent = storyStages[currentStage].text;
+       storyText.innerHTML = storyStages[currentStage].text;
 
 storyCard.parentElement.classList.add("flipped");
 
