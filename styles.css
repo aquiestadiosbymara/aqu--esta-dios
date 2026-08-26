@@ -87,249 +87,369 @@ color:white;
 
 }
 
+/* =========================================
+   HERO — NUEVA PORTADA
+========================================= */
+
 .hero{
 
-min-height:100vh;
+    min-height:100vh;
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-align-items:center;
+    align-items:center;
 
-position:relative;
+    position:relative;
 
-padding:200px 8% 120px;
+    padding:150px 8% 110px;
 
-overflow:hidden;
+    overflow:hidden;
 
 }
+
 
 .hero-content{
 
-width:100%;
-max-width:1400px;
+    width:100%;
 
-position:relative;
+    max-width:1200px;
 
-padding-left:120px;
-z-index:2;
+    position:relative;
+
+    z-index:2;
+
 }
+
+
 .hero-text{
 
-position:relative;
+    position:relative;
+
+    max-width:900px;
 
 }
+
+
+/* PEQUEÑO NOMBRE DE MARCA */
+
+.hero-eyebrow{
+
+    font-family:'Outfit',sans-serif;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:5px;
+
+    color:#C9A55C;
+
+    margin-bottom:30px;
+
+}
+
+
+/* TÍTULO */
 
 .title{
 
-display:flex;
+    display:flex;
 
-flex-direction:column;
+    flex-direction:column;
 
-position:relative;
+    position:relative;
 
-line-height:.95;
+    line-height:.82;
 
-}
-
-.title-1{
-
-font-family:'Outfit',sans-serif;
-
-font-size:98px;
-
-font-weight:700;
-
-z-index:3;
-
-position:relative;
+    margin:0;
 
 }
 
-.title-2{
 
-font-family:'Outfit',sans-serif;
+.title-main{
 
-font-size:74px;
+    font-family:'Outfit',sans-serif;
 
-font-weight:600;
+    font-size:clamp(76px,9vw,128px);
 
-margin-top:18px;
+    font-weight:600;
 
-margin-left:140px;
+    letter-spacing:-5px;
 
-z-index:3;
+    color:#181818;
 
-position:relative;
+    position:relative;
 
-}
-.title-god{
-
-position:absolute;
-
-right:180px;
-
-top:95px;
-
-font-size:178px;
-
-font-family:'Cormorant Garamond',serif;
-
-font-weight:700;
-
-background:linear-gradient(180deg,#F8E6A4,#D4AF37,#B8860B);
-
--webkit-background-clip:text;
-
--webkit-text-fill-color:transparent;
-
-opacity:.95;
-
-z-index:1;
-filter:
-drop-shadow(0 0 18px rgba(255,255,255,.95))
-drop-shadow(0 0 45px rgba(255,255,255,.75))
-drop-shadow(0 0 90px rgba(255,255,255,.45));
-
-animation: glow 4s ease-in-out infinite;
-}
-
-.title-3{
-
-font-family:'Outfit',sans-serif;
-
-font-size:80px;
-
-font-weight:600;
-
-margin-top:60px;
-
-margin-left:520px;
-
-z-index:3;
-
-position:relative;
+    z-index:3;
 
 }
+
+
+.title-highlight{
+
+    margin-left:150px;
+
+    color:#B8860B;
+
+    font-weight:500;
+
+}
+
+
+/* FRASE PRINCIPAL */
+
+.hero-statement{
+
+    margin-top:48px;
+
+    max-width:700px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(32px,4vw,52px);
+
+    font-weight:500;
+
+    line-height:1.05;
+
+    letter-spacing:-.5px;
+
+    color:#292929;
+
+}
+
+
+.hero-statement::first-line{
+
+    color:#292929;
+
+}
+
+
+/* TEXTO */
 
 .subtitle{
 
-margin-top:70px;
-max-width:760px;
+    margin-top:42px;
 
-font-family:'Outfit',sans-serif;
+    max-width:720px;
 
-font-size:22px;
-font-weight:400;
+    font-family:'Outfit',sans-serif;
 
-line-height:1.7;
+    font-size:19px;
 
-letter-spacing:-0.2px;
+    line-height:1.65;
 
-color:#575757;
-font-weight:400;
+    font-weight:400;
 
-letter-spacing:-0.2px;
+    color:#666;
 
-text-wrap:balance;
-text-align:left;
+    letter-spacing:-.1px;
+
+    text-align:left;
 
 }
 
-.btn-hero{
-
-display:inline-block;
-
-margin-top:45px;
-
-padding:20px 48px;
-
-background:#181818;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:999px;
-
-font-weight:500;
-
-transition:.35s;
-    
-position:relative;
-    
-overflow:hidden;
-}
-
-.btn-hero:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 18px 45px rgba(0,0,0,.18);
-
-}
-.btn-hero:hover::before{
-
-left:150%;
-
-}
-.glow{
-
-position:absolute;
-
-width:1200px;
-height:1200px;
-
-top:50%;
-left:50%;
-
-transform:translate(-50%,-50%);
-
-background:
-radial-gradient(circle,
-rgba(255,255,255,0.95) 0%,
-rgba(255,255,255,0.75) 18%,
-rgba(248,247,243,0.35) 40%,
-transparent 72%);
-
-filter:blur(70px);
-
-z-index:0;
-
-pointer-events:none;
-
-}
-.subtitle{
-
-max-width:840px;
-
-font-size:21px;
-
-line-height:1.55;
-
-font-weight:400;
-
-color:#5f5f5f;
-
-margin-top:70px;
-
-}
 
 .subtitle strong{
 
-color:#181818;
+    color:#181818;
 
-font-weight:700;
+    font-weight:700;
 
 }
-.diosidad{
 
-font-weight:800;
 
-color:#B8860B;
+/* BOTÓN */
 
-} 
+.btn-hero{
+
+    display:inline-block;
+
+    margin-top:38px;
+
+    padding:19px 45px;
+
+    background:#181818;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:999px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.btn-hero:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.18);
+
+}
+
+
+/* LUZ CENTRAL */
+
+.glow{
+
+    position:absolute;
+
+    width:1000px;
+
+    height:1000px;
+
+    top:48%;
+
+    left:55%;
+
+    transform:translate(-50%,-50%);
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,255,255,.95) 0%,
+        rgba(255,255,255,.72) 20%,
+        rgba(248,247,243,.30) 45%,
+        transparent 72%
+    );
+
+    filter:blur(70px);
+
+    z-index:0;
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:900px){
+
+    .hero{
+
+        padding:140px 7% 90px;
+
+        align-items:center;
+
+    }
+
+    .hero-text{
+
+        max-width:100%;
+
+    }
+
+    .title-main{
+
+        font-size:clamp(68px,11vw,100px);
+
+        letter-spacing:-4px;
+
+    }
+
+    .title-highlight{
+
+        margin-left:80px;
+
+    }
+
+    .hero-statement{
+
+        font-size:38px;
+
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    .hero{
+
+        min-height:auto;
+
+        padding:145px 24px 90px;
+
+    }
+
+    .hero-eyebrow{
+
+        font-size:11px;
+
+        letter-spacing:4px;
+
+        margin-bottom:25px;
+
+    }
+
+    .title{
+
+        line-height:.88;
+
+    }
+
+    .title-main{
+
+        font-size:clamp(62px,19vw,86px);
+
+        letter-spacing:-3px;
+
+    }
+
+    .title-highlight{
+
+        margin-left:45px;
+
+    }
+
+    .hero-statement{
+
+        margin-top:35px;
+
+        font-size:32px;
+
+        line-height:1.05;
+
+    }
+
+    .subtitle{
+
+        margin-top:32px;
+
+        font-size:17px;
+
+        line-height:1.65;
+
+    }
+
+    .btn-hero{
+
+        width:100%;
+
+        text-align:center;
+
+        margin-top:32px;
+
+        padding:18px 25px;
+
+    }
+
+}
 @keyframes glow{
 
 0%{
