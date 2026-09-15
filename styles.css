@@ -2110,3 +2110,91 @@ box-shadow:
     }
 
 }
+/* ================================
+   VÍDEO DE BIENVENIDA
+================================ */
+
+.video-bienvenida {
+    padding: 120px 8% 130px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.video-intro {
+    max-width: 850px;
+    margin: 0 auto 50px;
+}
+
+.video-eyebrow {
+    margin-bottom: 16px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #c99522;
+}
+
+.video-intro h2 {
+    margin: 0;
+
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 500;
+    line-height: 1.15;
+
+    color: #181818;
+}
+
+.video-wrapper {
+    width: 100%;
+    max-width: 950px;
+    aspect-ratio: 16 / 9;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.10);
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .video-bienvenida {
+        padding: 90px 20px 100px;
+    }
+
+    .video-intro {
+        margin-bottom: 35px;
+    }
+
+    .video-eyebrow {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .video-intro h2 {
+        font-size: 38px;
+    }
+
+    .video-wrapper {
+        border-radius: 18px;
+    }
+
+}
