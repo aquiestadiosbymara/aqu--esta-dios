@@ -2198,3 +2198,16 @@ box-shadow:
     }
 
 }
+/* LOGO DE LA ESCUELA EN LA PORTADA */
+
+.hero-logo {
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-logo img {
+    width: 110px;
+    height: auto;
+    display: block;
+}
