@@ -2390,3 +2390,139 @@ box-shadow:
         font-size: 12px;
     }
 }
+
+/* AJUSTE VISUAL: CIERRE DE SALA ARCOÍRIS */
+
+.offer-card .offer-button-disabled,
+.offer-card .offer-button-disabled:disabled {
+    display: flex !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 17px 20px !important;
+    margin: 0 !important;
+    border: 1px solid #d5d0cb !important;
+    border-radius: 50px !important;
+    background: #e5e2df !important;
+    color: #77716c !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.2px !important;
+    box-shadow: none !important;
+    transform: none !important;
+    cursor: not-allowed !important;
+}
+
+/* TARJETA DEL AVISO */
+
+.offer-card .offer-closed-notice {
+    display: flex !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    margin: 24px 0 0 !important;
+    padding: 24px !important;
+    border: 1px solid #eadbc9 !important;
+    border-radius: 16px !important;
+    background: #fcf7f2 !important;
+    text-align: left !important;
+}
+
+/* ICONO */
+
+.offer-card .offer-closed-icon {
+    display: flex !important;
+    flex: 0 0 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    background: #f0e2d5 !important;
+    color: #a37b56 !important;
+    font-size: 16px !important;
+}
+
+/* TEXTO */
+
+.offer-card .offer-closed-content {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+.offer-card .offer-closed-content h4 {
+    margin: 0 0 12px !important;
+    color: #49392f !important;
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    line-height: 1.25 !important;
+}
+
+.offer-card .offer-closed-content p {
+    margin: 0 0 14px !important;
+    color: #68584d !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 1.9 !important;
+}
+
+/* ENLACE DE INSTAGRAM */
+
+.offer-card .offer-closed-content a.offer-instagram-link,
+.offer-card .offer-closed-content a.offer-instagram-link:visited,
+.offer-card .offer-closed-content a.offer-instagram-link:hover {
+    display: inline-flex !important;
+    width: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+    gap: 9px !important;
+    margin: 4px 0 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #98714f !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.8 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+.offer-card .offer-closed-content a.offer-instagram-link:hover {
+    color: #6f4c32 !important;
+    text-decoration: underline !important;
+}
+
+@media (max-width: 480px) {
+    .offer-card .offer-closed-notice {
+        gap: 12px !important;
+        padding: 18px !important;
+    }
+
+    .offer-card .offer-closed-icon {
+        flex-basis: 34px !important;
+        width: 34px !important;
+        height: 34px !important;
+    }
+
+    .offer-card .offer-closed-content h4 {
+        font-size: 22px !important;
+    }
+
+    .offer-card .offer-closed-content p {
+        font-size: 12px !important;
+        line-height: 1.8 !important;
+    }
+}
